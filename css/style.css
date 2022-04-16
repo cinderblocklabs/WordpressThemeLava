@@ -1,0 +1,45 @@
+/* ROOT */
+
+:root {
+    --section-color: rgb(186;  148;  224);
+}
+
+/* GLOBALS */
+
+body {
+    background-color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+    /* font-family:'Segoe UI';  Tahoma;  Geneva;  Verdana;  sans-serif; */
+}
+
+/* header {
+    font-family: 'Raleway';  sans-serif;
+} */
+
+/* nav {
+    color: aliceblue;
+} */
+
+/* CLASSES */
+
+.section-color {
+    background-color: var(--section-color);
+}
+
+.section-1-img {
+    height:450px;
+    width: auto;
+}
+
+.section-2-img {
+    height:450px;
+    width: auto;
+}
+
+.blurred {
+    -webkit-filter: blur(4px); 
+    -moz-filter:blur(4px); 
+    -ms-filter:blur(4px); 
+    -o-filter:blur(4px); 
+    filter:blur(4px);
+}

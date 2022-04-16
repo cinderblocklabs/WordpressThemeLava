@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Title -->
+    <title>Custom Wordpress Theme</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Optional Meta Tags -->
+    <meta name="author" content="Cinderblock Labs">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Optional JavaScript -->
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <!-- FontAwsome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+    <!-- Custom CSS Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+
+    <!-- PINYON SCRIPT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Pinyon+Script&display=swap" rel="stylesheet">   
+    
+    <!-- RALEWAY LIGHT 300 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+    <!-- RIGHTEOUS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div id="header" class="jumbotron jumbotron-fluid bisque-on-black">
+        
+        <!-- TITLES -->
+        <div class="container">
+        
+            <!-- MAIN TITLE -->
+            <h1 class="display-3">Custom Wordpress Theme</h1>
+            
+            <!-- SUBTITLE -->
+            <h2 class="display-8"><i>And the themes go on...</i></h2>
+        
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav id="navbar" class="navbar navbar-expand-sm">
+
+        <!-- NAVBAR BRAND -->
+        <a class="navbar-brand" href="#">
+
+            <!-- BRAND IMAGE -->
+            <img id="brand-img" src="images\star-img.png">
+
+            <!-- FAS class "fa-info-circle"
+            <i class="fas fa-info-circle"></i>
+
+            <!-- FAS class "fa-thumbs-up" -->
+            <!-- <i class="fas fa-thumbs-up"></i>
+
+            <!-- FAS class "" -->
+            <!-- <i class="fa fa-thumbs-down" aria-hidden="true"></i>  -->
+        </a>
+
+        <!-- NAVBAR TOGGLER -->
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- NAVBAR MAIN BODY -->
+        <div id="navbar-link-container" class="collapse navbar-collapse" id="collapsibleNavId">
+            <!-- NAVBAR LINKS -->
+            <ul id="navbar-links" class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <hr class="button-outline">
+                        <a class="nav-link" href="#">Home</a>
+                    <hr class="button-outline">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><span class="">About</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- NAVBAR BUTTON SCRIPT -->
+    <script>
+        $('#navId a').click(e => {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+    </script>
+
+    <!-- DIVIDER -->
+    
+    <!-- MAIN CONTAINER -->
+    <main class="main-wrapper container-fluid">
+
+        <!-- MAIN ARTICLE TITLE -->
+        <div class="content-divider">
+            <hr>
+                <h2 class="subtitle">Main Content Area</h2>
+            <hr>
+        </div>
+        <!-- GALLERY -->
+        <!-- Should Create 2 image-per-row when "col" is equal to medium size (between 750-1000px) -->
+        <!-- <div id="gallery" class="container-fluid">
+            <div class="row flex-row" data-toggle="modal" data-target="#exampleModal">
+                <div class="carou-item col col-xs-2 col-sm-3 col-lg-6">
+                    <article class="img-container">
+                        <div class="image">
+                            <a href="#" target="_blank"><img class="w-100 carou-img enlarge" src="https://media.wired.com/photos/5a593a7ff11e325008172bc2/master/pass/pulsar-831502910.jpg" alt="Galaxy1"
+                            data-target="#carouselExample" data-slide-to="0"></a>
+                        </div>
+                        <hr>
+                            <div class="description">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate eveniet voluptatum in nulla molestias sequi est, voluptates necessitatibus quam laborum, voluptatibus nobis. Necessitatibus numquam impedit possimus incidunt! Accusantium, at vel!</p>
+                            </div>
+                        <hr>
+                    </article>
+                </div>
+                <div class="carou-item col col-xs-2 col-sm-3 col-lg-6">
+                    <article class="img-container">
+                        <div class="image">
+                            <a href="#" target="_blank"><img class="w-100 carou-img enlarge" src="https://media.wired.com/photos/5a593a7ff11e325008172bc2/master/pass/pulsar-831502910.jpg" alt="Galaxy2"
+                            data-target="#carouselExample" data-slide-to="0"></a>
+                        </div>
+                        <hr>
+                            <div class="description">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate eveniet voluptatum in nulla molestias sequi est, voluptates necessitatibus quam laborum, voluptatibus nobis. Necessitatibus numquam impedit possimus incidunt! Accusantium, at vel!</p>
+                            </div>
+                        <hr>
+                    </article>
+                </div>
+            </div>
+            <div class="row flex-row" data-toggle="modal" data-target="#exampleModal">
+                <div class="carou-item col col-xs-2 col-sm-3 col-lg-6">
+                    <article class="img-container">
+                        <div class="image">
+                            <a href="#" target="_blank"><img class="w-100 carou-img enlarge" src="https://media.wired.com/photos/5a593a7ff11e325008172bc2/master/pass/pulsar-831502910.jpg" alt="Galaxy3"
+                            data-target="#carouselExample" data-slide-to="0"></a>
+                        </div>
+                        <hr>
+                            <div class="description">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate eveniet voluptatum in nulla molestias sequi est, voluptates necessitatibus quam laborum, voluptatibus nobis. Necessitatibus numquam impedit possimus incidunt! Accusantium, at vel!</p>
+                            </div>
+                        <hr>
+                    </article>
+                </div>
+                <div class="carou-item col col-xs-2 col-sm-3 col-lg-6">
+                    <article class="img-container">
+                        <div class="image">
+                            <a href="#" target="_blank"><img class="w-100 carou-img enlarge" src="https://media.wired.com/photos/5a593a7ff11e325008172bc2/master/pass/pulsar-831502910.jpg" alt="Galaxy4"
+                            data-target="#carouselExample" data-slide-to="0"></a>
+                        </div>
+                        <hr>
+                            <div class="description">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate eveniet voluptatum in nulla molestias sequi est, voluptates necessitatibus quam laborum, voluptatibus nobis. Necessitatibus numquam impedit possimus incidunt! Accusantium, at vel!</p>
+                            </div>
+                        <hr>
+                    </article>
+                </div>
+            </div>
+            <!-- <div class="row flex" data-toggle="modal" data-target="#exampleModal">
+            </div> -->
+        </div> -->
+        <!-- DIVIDER -->
+        <div class="content-divider">
+            <hr>
+            <br>
+            <hr>
+        </div>
+        <!-- FOOTER -->
+    </main>
+
+    <footer>
+        <div id="footer-container" class="contrasted-bw">
+            <div id="icons">
+                <h2>Follow Us!</h2>
+                <ul id="icon-list" class="flex-row">
+                    <li><a href=""><img class="footer-sclmd-icons" src="images\facebook2.png"></a></li>
+                    <li><a href=""><img class="footer-sclmd-icons" src="images\instagram1.png"></a></li>
+                    <li><a href=""><img class="footer-sclmd-icons" src="images\twitter2.png"></a></li>
+                    <li><a href=""><img class="footer-sclmd-icons" src="images\linkedin1.png"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="copyright" class="contrasted-bw">
+            <p>Copyright &copy; 2021</p>
+        </div>
+    </footer>
+</body>
+<style>
+</style>
+</html>

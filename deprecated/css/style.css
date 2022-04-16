@@ -1,0 +1,299 @@
+/* VARIABLES */
+:root {
+    --dark-grey: rgb(60, 58, 58);
+}
+
+/* BODY */
+
+/* COLORS AND STYLES */
+
+.contrasted-bw {
+    background-color: black;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* GLOBAL */
+body {
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: var(--dark-grey);
+    margin:0px;
+    padding:0px;
+}
+
+main {
+    padding: 15px;
+    max-width: 1800px;
+    margin:0;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+#header {
+    /* background: url() no-repeat; */
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: absolute;
+    transform: translateY(-50%,50%);
+}
+
+/* I want this to dynamically scroll down with the page and then fix itself back into its original position when scrolling back up */
+#navbar {
+    background-color: white;
+    margin-top:-2%;
+    padding:20px;
+    height: 100px;
+}
+
+#navbar-link-container {
+    margin-left: -3%;
+}
+
+#gallery {
+    width: 100%;
+    height: auto;
+    margin: 2%;
+}
+
+#navbar-links {
+    margin:auto;
+    text-align: center;
+}
+
+/* Brand Image */
+#brand-img {
+    margin: auto;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+}
+
+.button-outline {
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.button-outline:hover {
+    display: static;
+}
+
+a {
+    text-decoration: none;
+    border-radius: 5%;
+}
+
+p {
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+/* {Text is still blue} */
+.nav-item {
+    width: 120px;
+    height: auto;
+    font-size: 22px;
+    padding: 5px;
+    margin-bottom: 2%;
+    margin-left:10px;
+    margin-right: 10px;
+    border-radius: 10%;
+}
+
+.nav-item:hover {
+    border: 1px black solid;
+    transform: scale(1.1);
+}
+
+.content-divider {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.bisque-on-black {
+    background-color: black;
+    color:bisque;
+}
+
+.black-on-bisque {
+    background-color: bisque;
+    color: black;
+}
+
+.img-container {
+    height:620px;
+    width:340px;
+}
+
+.carou-item {
+    width: 50%; 
+    margin: auto;
+}
+
+.carou-img {
+    width: 550px;
+    height: 320px;
+    border-radius: 2%;
+    
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Should become full size when clicked */
+.carou-img:hover {
+    transform: scale(1.3);
+    /* animation-name: scale;
+    animation-duration: 0.8s; */
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+footer {
+    background-color: var(--footer-color);
+    bottom: 0;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.footer-sclmd-icons {
+    width: 32px;
+    height:auto;
+}
+
+#footer-container {
+    height: 150px;
+    width: 100%;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright {
+    align-items: flex-end;
+    position: relative;
+    float:right;
+    margin-right: 15px;
+}
+
+/* ANIMATIONS */
+
+/* SCALE IMG */
+
+
+/* ENLARGE */
+/* .enlarge {
+    animation-name: return;
+    animation-duration: 2s;
+} */
+
+/* CSS Animation for .CAROU-IMG */
+
+/* .enlarge:hover {
+    animation-name: enlarge;
+    animation-duration: 3s;
+} */
+
+@keyframes scale {
+    from {
+        transform: scale(1);
+    };
+    to {
+        transform: scale(1.3);
+    }
+}
+
+@keyframes enlarge {
+    from {
+        width: 600px;
+        height: 320px;
+    }; 
+    to {
+        width: 620px;
+        height: 340px;
+    };
+}
+
+@keyframes return {
+    from {
+        width: 620px;
+        height: 340px;
+    }; 
+    to {
+        width: 600px;
+        height: 320px;
+    };
+}
+
+/* FOR MOBILE DEVICES */
+@media screen and (width <= 450px) {
+
+    /* Brand Image */
+    #brand-img {
+        border-radius: 100%;
+        height: 50px;
+        width: 50px;
+        float:left;
+    }
+
+    /* Mobile Version */
+    #gallery {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        /* transform: translateY(-50%,50%);
+        transform: translateX(-50%,50%); */
+    }
+    
+    /* Mobile Version */
+    .flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        margin: auto;
+    }
+    
+    /* Mobile Version */
+    .col {
+        margin-top: 50px;
+    }
+
+    /* Mobile */
+    .img-container {
+        position:absolute;
+        height:300px;
+        width:100%;
+    }
+
+    /* Mobile Version */
+    .carou-img {
+        position: relative;
+        max-height: 300px;
+        width: 100%;
+
+        /* offset-x | offset-y | blur-radius | spread-radius | color */
+        box-shadow: none;
+    }
+}
+
+/* @media screen and (width > 400px) {
+
+
+    .flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    }
+    
+/* }  */
