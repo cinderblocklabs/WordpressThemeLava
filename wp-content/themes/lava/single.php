@@ -1,0 +1,1 @@
+<!-- This displays single blog posts (prolly not going to be used for my theme) -->
