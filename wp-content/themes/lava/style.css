@@ -1,4 +1,8 @@
+/* IMPORT STATEMENTS */
+
 @import url(https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap);
+@import url(https://fonts.googleapis.com/);
+
 /* WORDPRESS INFO */
 /* 
     
@@ -22,6 +26,7 @@
 /* ROOT */
 
 :root {
+    --raleway: 'Raleway', sans-serif;
     --section-color: rgb(186;  148;  224);
 }
 
@@ -30,18 +35,7 @@
 body {
     background-color: aliceblue;
     font-family: 'Raleway', sans-serif;
-    /* font-family:'Segoe UI';  Tahoma;  Geneva;  Verdana;  sans-serif; */
 }
-
-/* header {
-    font-family: 'Raleway';  sans-serif;
-} */
-
-/* nav {
-    color: aliceblue;
-} */
-
-/* CLASSES */
 
 .section-color {
     background-color: var(--section-color);

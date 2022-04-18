@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap);
+/* WORDPRESS INFO */
+/* 
+    
+    Theme Name: Lava
+    
+    Text Domain: Lava
+    
+    Version: 1.0
+    
+    Description: First ever wordpress theme. Intended to be versatile and suitable to many applications 
+    such as restaurants, travel sites, store frontpages and others. Not suitable for blogs though. 
+    
+    Tags: responsive, mobile, simple, animated, versatile
+    
+    Author: Cinderblock Labs
+    
+    Author URI: none
+
+*/
+
+/* ROOT */
+
+:root {
+    --section-color: rgb(186;  148;  224);
+}
+
+/* GLOBALS */
+
+body {
+    background-color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+}
+
+.section-color {
+    background-color: var(--section-color);
+}
+
+.section-1-img {
+    height:450px;
+    width: auto;
+}
+
+.section-2-img {
+    height:450px;
+    width: auto;
+}
+
+.blurred {
+    -webkit-filter: blur(4px); 
+    -moz-filter:blur(4px); 
+    -ms-filter:blur(4px); 
+    -o-filter:blur(4px); 
+    filter:blur(4px);
+}
