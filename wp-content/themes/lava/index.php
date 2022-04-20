@@ -23,20 +23,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
-    <!-- FontAwesome -->
+    <!-- FontAwsome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 
     <!-- Custom CSS Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="style-test.css" media="screen">
 
     <!-- PINYON SCRIPT -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Pinyon+Script&display=swap" rel="stylesheet">   
     
-    <!-- RALEWAY LIGHT 300 -->
+    <!-- RALEWAY LIGHT 300
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> -->
 
     <!-- RIGHTEOUS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,69 +46,69 @@
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header>
+    
+    <!-- NAVBAR -->
+    <!-- container with no padding (p-0) -->
+    <div id="navigation" class="container-fluid p-0 desktop shadow-md">
+        <nav class="navbar navbar-expand-lg section-color">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Custom WP</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
+                    aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarID">
+                    <!-- div mr-auto ('margin-right auto') -->
+                    <div class="mr-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                About
 
-        <!-- NAVBAR -->
-        <!-- container with no padding (p-0) -->
-        <div class="container-fluid p-0">
-                <nav class="navbar navbar-expand-lg section-color">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#">Custom WP</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
-                            aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarID">
-                            <!-- div mr-auto ('margin-right auto') -->
-                            <div class="mr-auto"></div>
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a href="#" class="nav-item">
-                                        Home
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-item">
-                                        About
-
-                                    </a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <div class="dropdown">
-                                        <a href="#" class="nav-link">
-                                            Services
-                                        </a>
-                                        <div class="dropdown-content">
-                                            <a href="#">Page 1</a>
-                                            <a href="#">Page 2</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="" class="nav-item">
-                                        Contact
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <div class="dropdown">
+                                <a href="#" class="nav-link">
+                                    Services
+                                </a>
+                                <div class="dropdown-content">
+                                    <a href="#">Page 1</a>
+                                    <a href="#">Page 2</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            
-        <div class="container text-center">
+        </nav>
+    </div>
+
+    <!-- HEADER -->
+    <header>        
+        <div id="header-container" class="container text-center">
             <div class="row">
                 <div class="col-md-7 col-sm-12">
-                    <h6>Main Content</h6>
-                    <h1>Get Ready for Content Bonanza</h1>
+                    <h1>Main Content</h2>
+                    <h2>Get Ready for Content Bonanza</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eveniet debitis commodi ab illum numquam libero est ea, neque, odio eos? Unde asperiores nisi nostrum impedit magni ipsam amet quos.</p>
                     <!-- button with padding of 5px in x and 2px in y directions ('px-5 py-2') -->
-                    <button class="btn btn-primary px-5 py-2">Click Here For More</button>
+                    <button id="header-button" class="btn px-5 py-2 orange-bkg">Click Here For More</button>
                 </div>
                 <!-- with 25% height added ('h-25') -->
                 <div class="col-md-5 col-sm-12 h-25">
-                    <!-- <img src="header-galaxy-image.jpg" alt="No image yet!"> -->
-                    <img src="header-galaxy-image.jpg" alt="No image yet!">
+                    <!-- MAIN BACKGROUND IMAGE -->
+                    <img src="bird.png" alt="Image from freesvg.com">
                 </div>
             </div>
         </div>
@@ -259,17 +259,17 @@
             <div class="row text-left">
                 <div class="col-md-5">
                     <h1 class="text-light">
-                        <p class="text-muted">
+                        <p class="">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim aspernatur quasi distinctio consectetur consequuntur voluptate possimus eveniet veritatis commodi a perspiciatis harum cum animi quia reiciendis sapiente ad, soluta natus.
                         </p>
                         <p class="pt-4 text-muted">
-                            <p>&copy;2022 | This page was made by <span>Cinderblock Labs</span></p>    
+                            <h6>&copy;2022 | This page was made by <span>Cinderblock Labs</span></h6>    
                         </p> 
                     </h1>
                 </div>
                 <div class="col-md-5">
-                    <h4 class="text-light">Newsletter</h4>
-                    <p class="text-muted">Stay Updated!</p>
+                    <h2 class="text-light">Newsletter</h2>
+                    <p class="">Stay Updated!</p>
                     <form action="" class="form-inline">
                         <div class="col">
                             <div class="input-group pr-5">
@@ -283,7 +283,7 @@
                 </div>
                 <div class="col-md-2">
                     <h4 class="text-light">Follow Us!</h4>
-                    <p class="text-muted"></p>
+                    <p class=""></p>
                     <div class="column">
                         <i class="fab fa-facebook-f"></i>
                         <i class="fab fa-instagram"></i>

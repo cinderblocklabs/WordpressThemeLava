@@ -1,8 +1,4 @@
-/* IMPORT STATEMENTS */
-
 @import url(https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap);
-@import url(https://fonts.googleapis.com/);
-
 /* WORDPRESS INFO */
 /* 
     
@@ -26,8 +22,11 @@
 /* ROOT */
 
 :root {
-    --raleway: 'Raleway', sans-serif;
     --section-color: rgb(186;  148;  224);
+    --header-text: rgb(248, 246, 126);
+    --orange-lingrad: linear-gradient(rgb(255, 8, 0), rgb(255, 166, 0));
+    --orange-lingrad-reverse: linear-gradient(rgb(255, 166, 0),rgb(255, 8, 0));
+    --orange: rgba(255, 38, 0, 0.788);
 }
 
 /* GLOBALS */
@@ -35,6 +34,77 @@
 body {
     background-color: aliceblue;
     font-family: 'Raleway', sans-serif;
+}
+
+header {
+    background: var(--orange-lingrad);
+    color:var(--header-text);
+    width: 100%;
+    height: 100vh;
+}
+
+header h1 {
+    font-size: 5em;
+}
+
+header h2 {
+    font-size: 2.5em;
+}
+
+header p {
+    margin-top: 2em;
+    font-size: 1.5em;
+    --header-text: orange;
+}
+
+header img {
+    max-height: 450px;
+    width: auto;
+}
+
+header button {
+    margin-top: 2em;
+}
+
+footer {
+    background: var(--orange-lingrad-reverse);
+    color: whitesmoke;
+    width: 100%;
+    max-height: 10%;
+    bottom: 0px;
+    margin: 0px;
+    clear:both;
+}
+
+p {
+    color: whitesmoke;
+}
+
+/* NAVBAR */
+
+
+
+/* IDs */
+
+#header-container {
+    
+}
+
+#navigation {
+    background-color: aliceblue;
+    margin: 0;
+    position: fixed;
+    height: 80px;
+    z-index: 2;
+}
+
+#header-button:hover {
+    background-color: red;
+    color: var(--orange);
+}
+
+.orange-bkg {
+    background-color: var(--orange);
 }
 
 .section-color {
