@@ -60,6 +60,9 @@
                 <div class="collapse navbar-collapse" id="navbarID">
                     <!-- div mr-auto ('margin-right auto') -->
                     <div class="mr-auto"></div>
+
+                    <!-- NAV ITEMS + LINKS -->
+
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a href="#" class="nav-link">
@@ -72,6 +75,9 @@
 
                             </a>
                         </li>
+
+                        <!-- DROPDOWN MENU SECTION -->
+
                         <li class="nav-item dropdown">
                             <div class="dropdown">
                                 <a href="#" class="nav-link">
