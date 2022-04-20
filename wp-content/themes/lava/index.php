@@ -258,8 +258,9 @@
         <div class="container-fluid p-0">
             <div class="row text-left">
                 <div class="col-md-5">
-                    <h1 class="text-light">
-                        <p class="">
+                    <h2 class="text-light">
+                        <h2>We're Here to Help</h1>
+                        <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim aspernatur quasi distinctio consectetur consequuntur voluptate possimus eveniet veritatis commodi a perspiciatis harum cum animi quia reiciendis sapiente ad, soluta natus.
                         </p>
                         <p class="pt-4 text-muted">
@@ -282,7 +283,7 @@
                     </form>
                 </div>
                 <div class="col-md-2">
-                    <h4 class="text-light">Follow Us!</h4>
+                    <h2 class="text-light">Follow Us!</h2>
                     <p class=""></p>
                     <div class="column">
                         <i class="fab fa-facebook-f"></i>

@@ -1,4 +1,9 @@
+/* IMPORTS */
+
 @import url(https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap);
+
+/* CTRL SHIFT K TO DELETE WHOLE LINE */
+
 /* WORDPRESS INFO */
 /* 
     
@@ -27,6 +32,7 @@
     --orange-lingrad: linear-gradient(rgb(255, 8, 0), rgb(255, 166, 0));
     --orange-lingrad-reverse: linear-gradient(rgb(255, 166, 0),rgb(255, 8, 0));
     --orange: rgba(255, 38, 0, 0.788);
+    --basalt: rgb(63, 71, 78);
 }
 
 /* GLOBALS */
@@ -34,6 +40,9 @@
 body {
     background-color: aliceblue;
     font-family: 'Raleway', sans-serif;
+    position: relative;
+    min-height: 100vh;
+    margin-top: 80px;
 }
 
 header {
@@ -64,42 +73,64 @@ header img {
 
 header button {
     margin-top: 2em;
+    color: whitesmoke;
+}
+
+section {
+    color: var(--basalt);
 }
 
 footer {
     background: var(--orange-lingrad-reverse);
     color: whitesmoke;
     width: 100%;
-    max-height: 10%;
-    bottom: 0px;
+    max-height: 100vh;
+    bottom: 0;
     margin: 0px;
     clear:both;
+    z-index: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+}
+
+footer p {
+    /* margin-top: 2em; */
+    font-size: 16px;
 }
 
 p {
     color: whitesmoke;
 }
 
-/* NAVBAR */
 
 
 
 /* IDs */
 
-#header-container {
-    
-}
+/* NAVBAR */
 
 #navigation {
-    background-color: aliceblue;
+    background-color: var(--basalt);
+    opacity: 100;
     margin: 0;
+    top: 0;
     position: fixed;
+    clear: both;
     height: 80px;
+    overflow: hidden;
     z-index: 2;
 }
 
+#navigation a {
+    display: block;
+    text-decoration: none;
+    color: var(--header-text);
+}
+
 #header-button:hover {
-    background-color: red;
+    background: rgb(187, 27, 6);
     color: var(--orange);
 }
 
