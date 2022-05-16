@@ -45,8 +45,6 @@
 
 </head>
 <body>
-
-    
     <!-- NAVBAR -->
     <!-- container with no padding (p-0) -->
     <div id="navigation" class="container-fluid p-0 desktop shadow-md">
@@ -79,7 +77,7 @@
                         <!-- DROPDOWN MENU SECTION -->
 
                         <li class="nav-item dropdown">
-                            <div class="dropdown">
+                            <!-- <div class="dropdown">
                                 <a href="#" class="nav-link">
                                     Services
                                 </a>
@@ -87,7 +85,7 @@
                                     <a href="#">Page 1</a>
                                     <a href="#">Page 2</a>
                                 </div>
-                            </div>
+                            </div> -->
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
@@ -101,26 +99,25 @@
     </div>
 
     <!-- HEADER -->
-    <header>        
-        <div id="header-container" class="container text-center">
-            <div class="row">
-                <div class="col-md-7 col-sm-12">
-                    <h1>Main Content</h2>
-                    <h2>Get Ready for Content Bonanza</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eveniet debitis commodi ab illum numquam libero est ea, neque, odio eos? Unde asperiores nisi nostrum impedit magni ipsam amet quos.</p>
-                    <!-- button with padding of 5px in x and 2px in y directions ('px-5 py-2') -->
-                    <button id="header-button" class="btn px-5 py-2 orange-bkg">Click Here For More</button>
-                </div>
-                <!-- with 25% height added ('h-25') -->
-                <div class="col-md-5 col-sm-12 h-25">
-                    <!-- MAIN BACKGROUND IMAGE -->
-                    <img src="bird.png" alt="Image from freesvg.com">
-                </div>
+    <header class="container-fluid text-center overlay">        
+        <div class="row">
+            <div class="col-md-7 col-sm-12">
+                <h1>Main Content</h2>
+                <h2>Get Ready for Content Bonanza</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eveniet debitis commodi ab illum numquam libero est ea, neque, odio eos? Unde asperiores nisi nostrum impedit magni ipsam amet quos.</p>
+                <!-- button with padding of 5px in x and 2px in y directions ('px-5 py-2') -->
+                <button id="header-button" class="btn px-5 py-2 orange-bkg">Click Here For More</button>
+            </div>
+            <!-- with 25% height added ('h-25') -->
+            <div class="col-md-5 col-sm-12 h-25">
+                <!-- MAIN BACKGROUND IMAGE -->
+                <img src="bird.png" alt="Image from freesvg.com">
             </div>
         </div>
     </header>
+
     <main>
-        <section class="section-1 container-fluid">
+        <section id="section-1" class="container-fluid">
             <container class="text-center">
                 <div class="row">
                     <div class="col-md-6">
@@ -230,8 +227,6 @@
         </section>
         <section class="section-4">
             <div class="container text-center">
-                <h1 class="text-dark">What our Customers Say</h1>
-                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <div class="team-row">
                     <div class="col-md-4">
                         <div class="card">
@@ -256,50 +251,56 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <h1 class="text-dark">What our Customers Say</h1>
+                    <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
         </section>
         <!-- Hero Unit here -->
     </main>
     
-    <footer>
-        <div class="container-fluid p-0">
-            <div class="row text-left">
-                <div class="col-md-5">
-                    <h2 class="text-light">
-                        <h2>We're Here to Help</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim aspernatur quasi distinctio consectetur consequuntur voluptate possimus eveniet veritatis commodi a perspiciatis harum cum animi quia reiciendis sapiente ad, soluta natus.
-                        </p>
-                        <p class="pt-4 text-muted">
-                            <h6>&copy;2022 | This page was made by <span>Cinderblock Labs</span></h6>    
-                        </p> 
-                    </h1>
-                </div>
-                <div class="col-md-5">
-                    <h2 class="text-light">Newsletter</h2>
-                    <p class="">Stay Updated!</p>
-                    <form action="" class="form-inline">
-                        <div class="col">
-                            <div class="input-group pr-5">
-                                <input type="text" placeholder="Email" class="form-control bg-dark text-white">
-                                <div class="input-group-prepend">
-                                    <input-group-text><i class="fas fa-arrow-right"></i></input-group-text>
-                                </div>
-                            </div>
+</body>
+<footer>
+    <div class="container-fluid p-5">
+        <div class="row text-left">
+            <div class="col-md-5">
+                <h2 class="text-light">
+                    <h2>We're Here to Help</h1>
+                    <p class="footer-content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim aspernatur quasi distinctio consectetur consequuntur voluptate possimus eveniet veritatis commodi a perspiciatis harum cum animi quia reiciendis sapiente ad, soluta natus.
+                    </p>
+                    <p class="pt-4 text-muted">
+                        <h6>&copy;2022 | This page was made by <span>Cinderblock Labs</span></h6>    
+                    </p> 
+                </h1>
+            </div>
+            <div class="col-md-5">
+                <h2 class="text-light">Newsletter</h2>
+                <p class="footer-content">Stay Updated!</p>
+                <form action="" class="form-inline">
+                    <div class="col">
+                        <div class="input-group flex-nowrap pr-5">
+                            <input type="text" placeholder="Email" class="form-control bg-dark text-white">
+                            <span class="input-group-text"><i class="fas fa-arrow-right"></i></span>
+                            <!-- <div class="input-group-prepend">
+                            </div> -->
                         </div>
-                    </form>
-                </div>
-                <div class="col-md-2">
-                    <h2 class="text-light">Follow Us!</h2>
-                    <p class=""></p>
-                    <div class="column">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-youtube"></i>
                     </div>
+                </form>
+            </div>
+            <div class="col-md-2">
+                <h2 class="text-light">Follow Us!</h2>
+                <p class=""></p>
+                <div class="footer-content column">
+                    <i class="fab fa-facebook-f fa-2x" style="color:rgb(50, 50, 50)"></i>
+                    <i class="fab fa-instagram fa-2x ml-2" style="color:rgb(50, 50, 50)"></i>
+                    <i class="fab fa-twitter fa-2x ml-2" style="color:rgb(50, 50, 50)"></i>
+                    <i class="fab fa-youtube fa-2x ml-2" style="color:rgb(50, 50, 50)"></i>
                 </div>
             </div>
         </div>
-    </footer>
-</body>
+    </div>
+</footer>
 </html>
