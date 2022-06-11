@@ -152,6 +152,10 @@ p {
     color: var(--header-text);
 }
 
+.nav-link {
+    color: orange;
+}
+
 #header-button:hover {
     background: rgb(187, 27, 6);
     color: yellow;
