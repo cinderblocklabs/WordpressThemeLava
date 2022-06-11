@@ -27,8 +27,10 @@
 /* ROOT */
 
 :root {
+    --parklane-font: "Park Lane NF Regular", sans-serif, Verdana;
     --section-color: rgb(186;  148;  224);
-    --header-text: rgb(248, 246, 126);
+    /* --header-text: rgb(248, 246, 126); */
+    --header-text: whitesmoke;
     --orange-lingrad: linear-gradient(rgb(255, 8, 0), rgb(255, 166, 0));
     --orange-lingrad-reverse: linear-gradient(rgb(255, 166, 0),rgb(255, 8, 0));
     --orange: rgba(255, 38, 0, 0.788);
@@ -62,6 +64,16 @@ header {
     color:var(--header-text);
     height: 100vh;
     width: 100%;
+}
+
+#header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parklane-font {
+    font-family: var(--parklane-font);
 }
 
 header h1 {

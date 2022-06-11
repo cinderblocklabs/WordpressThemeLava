@@ -105,7 +105,7 @@
         <div id="header-container" class="container text-center">
             <div class="row">
                 <div class="col-md-7 col-sm-12">
-                    <h1>Main Content</h2>
+                    <h1 class="pt-4">Main Content</h2>
                     <h2>Get Ready for Content Bonanza</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eveniet debitis commodi ab illum numquam libero est ea, neque, odio eos? Unde asperiores nisi nostrum impedit magni ipsam amet quos.</p>
                     <!-- button with padding of 5px in x and 2px in y directions ('px-5 py-2') -->
