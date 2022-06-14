@@ -48,6 +48,12 @@ html {
     height: 100vh;
 }
 
+/* REMOVES BLUE LINK COLOR */
+a, a:hover,a:focus,a:active {
+    text-decoration: none;
+    color:inherit;
+}
+
 body {
     background-color: var(--bone);
     font-family: var(--raleway-font);
@@ -69,7 +75,30 @@ header {
     color: var(--bone);
     height: 100vh;
     width: 100%;
+    z-index: 1;
     /* animation: heatfade 10s ease-in infinite; */
+}
+
+/* HEADER MEDIA QUERY */
+@media only screen and (max-width: 600px)  {
+    header {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #header-container h1,h2,h3,p {
+        margin: 0;
+        /* padding-top: 5px;  */
+        font-size: 12px;
+    }
+
+    .bkg-img {
+        margin-top: -35%;
+        transform: scale(50%);
+    } 
 }
 
 .title-section {
@@ -138,11 +167,27 @@ p {
 
 /* MEDIA QUERY FOR FOOTER */
 @media only screen and  (max-width: 600px) {
+    
+    footer {
+        height:100%;
+    }
+    
     #footer-content {
         display: flex;
         flex-direction: column;
     }
 }
+
+.fab {
+    padding: 2px; 
+    /* height: 30px;
+    width: 30px; */
+}
+
+.fab:hover {
+    transform: scale(0.5);
+}
+
 
 footer {
     background: var(--orange-lingrad-reverse);
