@@ -34,8 +34,6 @@
     --limelight-font: 'Limelight', cursive;
     --raleway-font: 'Raleway', sans-serif;
     --section-color: rgb(186;  148;  224);
-    /* --header-text: rgb(248, 246, 126); */
-    --header-text: whitesmoke;
     --orange-lingrad: linear-gradient(rgb(255, 8, 0), rgb(255, 166, 0));
     --orange-lingrad-reverse: linear-gradient(rgb(255, 166, 0),rgb(255, 8, 0));
     --orange: rgba(255, 38, 0, 0.788);
@@ -71,6 +69,7 @@ header {
     color: var(--bone);
     height: 100vh;
     width: 100%;
+    /* animation: heatfade 10s ease-in infinite; */
 }
 
 .title-section {
@@ -128,26 +127,52 @@ section p {
     color: var(--basalt);
 }
 
+p {
+    overflow-wrap: normal;
+}
+
+.paramargin {
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+/* MEDIA QUERY FOR FOOTER */
+@media only screen and  (max-width: 600px) {
+    #footer-content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 footer {
     background: var(--orange-lingrad-reverse);
     position: relative;
     color: whitesmoke;
     width: 100%;
-    height: 500px;
-    margin-top: -500px;
+    height: 350px;
+    margin-top: -350px;
     bottom: 0;
     clear:both;
     z-index: 1;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    margin: 0px;
 }
 
 footer p {
     /* margin-top: 2em; */
     font-size: 16px;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+}
+
+/* #footer-content {
+    display: flex;
+    flex-direction: row;
+}
+
+#copyright {
+    justify-content: flex-end;
+} */
 
 /* IDs */
 
@@ -174,11 +199,10 @@ footer p {
 
 /* MENU ITEM FLICKER ANIMATION */
 #navigation a:hover {
-    animation-duration: 500ms;
-    animation-name: flicker;
-    animation-direction:normal;
-    animation-iteration-count: infinite;
+    animation: flicker 500ms ease infinite;
 }
+
+/* HEADER HEAT FADE ANIMATION */
 
 #header-button {
     color: var(--bone);
@@ -235,10 +259,6 @@ footer p {
     padding-top: 5px;
 }
 
-.footer-module {
-    
-}
-
 /* Need to fix fqce image row */
 
 .team-row {
@@ -263,8 +283,24 @@ footer p {
     z-index: -1;
 }
 
-.card img {
-    z-index: -2;
+.img-col {
+    height: 400px;
+    width: 300px;
+}
+
+#face1 {
+    background: url(face1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#face2 {
+    background: url(face2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#face3 {
+    background: url(face3.jpg) no-repeat center;
+    background-size: cover;
 }
 
 /* ANIMATIONS */
@@ -279,11 +315,11 @@ footer p {
     }
 
     50% {
-        color: orangered;
+        color: rgb(139, 40, 4);
     }
 
     75% {
-        color: rgb(248, 177, 71);
+        color: rgb(255, 64, 0);
     }
 
     100% {
@@ -291,8 +327,13 @@ footer p {
     }
 }
 
+/* This will be for the background image */
 @keyframes heatfade {
-    /* This will be for the background image */
+
+    0%{background: var(--orange-lingrad)};
+    50%{background: linear-gradient(rgb(255, 120, 0), rgb(255, 120, 0))};
+    100%{background: var(--orange-lingrad-reverse)};
+
 }
 
 
