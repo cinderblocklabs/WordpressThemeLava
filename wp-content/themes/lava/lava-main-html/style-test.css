@@ -178,17 +178,6 @@ p {
     }
 }
 
-.fab {
-    padding: 2px; 
-    /* height: 30px;
-    width: 30px; */
-}
-
-.fab:hover {
-    transform: scale(0.5);
-}
-
-
 footer {
     background: var(--orange-lingrad-reverse);
     position: relative;
@@ -198,7 +187,8 @@ footer {
     margin-top: -350px;
     bottom: 0;
     clear:both;
-    z-index: 1;
+    transform: translateZ(-350px);
+    z-index: 2;
 }
 
 footer p {
@@ -210,14 +200,26 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0px;
 }
 
+.fab {
+    padding: 2px; 
+    /* height: 30px;
+    width: 30px; */
+}
+
+.fab:hover {
+    transform: scale(0.5);
+}
+
 /* #footer-content {
     display: flex;
     flex-direction: row;
-}
+} */
 
 #copyright {
-    justify-content: flex-end;
-} */
+    margin-right: 5%;
+    transform: translateY(300%);
+    float: right;
+}
 
 /* IDs */
 
@@ -307,6 +309,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Need to fix fqce image row */
 
 .team-row {
+    margin-bottom: -350px;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -331,6 +334,7 @@ h1, h2, h3, h4, h5, h6 {
 .img-col {
     height: 400px;
     width: 300px;
+    
 }
 
 #face1 {
