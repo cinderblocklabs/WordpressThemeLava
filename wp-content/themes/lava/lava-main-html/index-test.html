@@ -72,15 +72,15 @@
                                 </a>
                             </div>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                About
-                            </a>
-                        </li>
 
                         <!-- DROPDOWN MENU SECTION -->
 
                         <li class="nav-item dropdown">
+                            <div class="nav-link-tab">
+                                <a href="#" class="nav-link">
+                                    Services
+                                </a>
+                            </div>
                             <!-- <div class="dropdown">
                                 <a href="#" class="nav-link">
                                     Services
@@ -92,9 +92,11 @@
                             </div> -->
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                Contact
-                            </a>
+                            <div class="nav-link-tab">
+                                <a href="#" class="nav-link">
+                                    Contact
+                                </a>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -112,7 +114,7 @@
                 </div>
                 <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eveniet debitis commodi ab illum numquam libero est ea, neque, odio eos? Unde asperiores nisi nostrum impedit magni ipsam amet quos.</p>
                 <!-- button with padding of 5px in x and 2px in y directions ('px-5 py-2') -->
-                <button id="header-button" class="btn px-5 py-2 orange-bkg">Click Here For More</button>
+                <button id="header-button" class="btn px-5 py-2 orange-bkg" onclick="testButtonAction()">Click Here For More</button>
             </div>
             <!-- with 25% height added ('h-25') -->
             <div class="col-md-5 col-sm-12 h-25">
@@ -322,7 +324,20 @@
         </div>
     </footer>
 </body>
-<script id="menu()">
+
+<!-- SCRIPTS -->
+<!-- MOBILE HAMBURGER MENU SCRIPT -->
+
+<script type="text/javascript" id="testButtonAction()">
+    alert("You have clicked the button")
+</script>
+
+<script type="text/javascript" id="hamburger()">
+
+</script>
+
+<!-- DROPDOWN MENU SCRIPT -->
+<script type="text/javascript" id="dropdown()">
     function myFunction() {
   var x = document.getElementById("myLinks");
   if (x.style.display === "block") {
