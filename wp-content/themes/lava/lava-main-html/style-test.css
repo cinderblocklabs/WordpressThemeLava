@@ -244,10 +244,6 @@ h1, h2, h3, h4, h5, h6 {
     color: orange;
 }
 
-/* MENU ITEM FLICKER ANIMATION */
-#navigation a:hover {
-    animation: flicker 500ms ease infinite;
-}
 
 /* HEADER HEAT FADE ANIMATION */
 
@@ -267,9 +263,18 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
+#app-icon-row {
+    
+}
+
 .nav-link {
     font-size: 22px;
     
+}
+
+.nav-link-tab {
+    height: auto;
+    width:fit-content;
 }
 
 .orange-bkg {
@@ -352,27 +357,50 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
 }
 
+label {
+    width: 50px;
+}
+
+/* ONLY TARGETS INPUTS OF TEXT TYPE */
+input[type=text] {
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+  }
+
 /* ANIMATIONS */
+
+/* MENU ITEM FLICKER ANIMATION */
+#navigation a:hover {
+    animation: flicker 1.5s ease infinite;
+    transition: height 1.5s;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    animation-fill-mode: forwards;
+}
 
 @keyframes flicker {
     0% {
+        color: rgb(155, 47, 20);
+    }
+    
+    25% {
         color: orange;
     }
-
-    25% {
-        color: rgb(255, 183, 0);
-    }
-
+    
     50% {
-        color: rgb(139, 40, 4);
+        color: rgb(22, 17, 8);
     }
-
+    
     75% {
-        color: rgb(255, 64, 0);
+        color: rgb(129, 43, 33);
     }
-
+    
+    90% {
+        color:rgb(255, 120, 0)
+    }
+    
     100% {
-        color: rgb(32, 31, 29);
+        color: rgb(22, 17, 8);
     }
 }
 
