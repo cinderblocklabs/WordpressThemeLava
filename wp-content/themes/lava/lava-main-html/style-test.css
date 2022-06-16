@@ -1,16 +1,9 @@
-/* IMPORTS */
-
-/* RALEWAY */
-@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap);
-
-/* LIMELIGHT 400 */
-@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
 
 /* CTRL SHIFT K TO DELETE WHOLE LINE */
 
 /* WORDPRESS INFO */
 /* 
-    
+
     Theme Name: Lava
     
     Text Domain: Lava
@@ -25,8 +18,16 @@
     Author: Cinderblock Labs
     
     Author URI: none
-
+    
 */
+
+/* IMPORTS */
+
+/* RALEWAY */
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap);
+
+/* LIMELIGHT 400 */
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
 
 /* ROOT */
 
@@ -380,23 +381,23 @@ input[type=text] {
 
 @keyframes flicker {
     0% {
-        color: rgb(155, 47, 20);
-    }
-    
-    25% {
         color: orange;
     }
     
-    50% {
-        color: rgb(22, 17, 8);
-    }
-    
-    75% {
+    25% {
         color: rgb(129, 43, 33);
     }
     
+    50% {
+        color: rgb(221, 90, 19);
+    }
+    
+    75% {
+        color: rgb(22, 17, 8);
+    }
+    
     90% {
-        color:rgb(255, 120, 0)
+        color:rgb(255, 157, 0);
     }
     
     100% {
