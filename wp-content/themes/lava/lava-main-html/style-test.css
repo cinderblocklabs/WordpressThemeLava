@@ -50,7 +50,8 @@ html {
 }
 
 hr {
-    background-color: orange; 
+    background-color: orange;
+    box-shadow: 0 20px 20px -20px #333; 
     height: 2px;
     width: 50vw;
 }
