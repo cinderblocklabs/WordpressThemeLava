@@ -331,7 +331,7 @@ h1, h2, h3, h4, h5, h6 {
 .card {
     margin: 2px 8px 2px 8px;
     padding: 4px;
-    max-height: 35vh;
+    height: auto;
     width: 15vw;
     z-index: -1;
 }
