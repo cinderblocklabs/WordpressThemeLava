@@ -82,15 +82,7 @@
                                 </a>
                             </div>
                         </li>
-
-                        <li class="nav-item">
-                            <div class="nav-link-tab">
-                                <a href="#faces-section" class="nav-link" target="">
-                                    Our Team
-                                </a>
-                            </div>
-                        </li>
-
+                        
                         <!-- DROPDOWN MENU SECTION -->
 
                         <li class="nav-item dropdown">
@@ -116,6 +108,14 @@
                                 </a>
                             </div>
                         </li>
+                        
+                        <li class="nav-item">
+                            <div class="nav-link-tab">
+                                <a href="#faces-section" class="nav-link" target="">
+                                    Our Team
+                                </a>
+                            </div>
+                        </li>
 
                         <li class="nav-item">
                             <div class="nav-link-tab">
@@ -128,8 +128,7 @@
                 </div>
             </div>
         </nav>
-    </div>
-
+    </div>    
     <!-- HEADER SECTION-->
 
     <header id="header-container" class="container-fluid text-center overlay">        
@@ -346,6 +345,8 @@
     
     <footer>
         <div id="footer-container" class="container-fluid">
+
+            <!-- Conclusion Text -->
             <div id="footer-content-left" class="footer-module row text-left">
                 <div class="col-md-5">
                     <h2 class="text-light">
@@ -355,32 +356,56 @@
                         </p>
                     </h1>
                 </div>
+
+
+                <!-- Contact Form -->
                 <div id="footer-content-center" class="footer-module col-md-5">
                     <h2 class="text-light">Newsletter</h2>
                     <p class="footer-content">Stay Updated!</p><br>
-                    <form action="email-form" class="form-inline">
-                        <div class="col">
-                            <div id="email-form-ig" class="input-group">
-                                <label class="form-control" for="email">Email</label><br>
-                                <input type="text" name="email" placeholder="Email" class="form-control bg-dark text-white" >
-                                <span class="input-group-text">
-                                    <a href="#">
-                                        <i class="fas fa-arrow-right" style="width: fit-content;height: auto;"></i>
-                                    </a>
-                                </span>
-                                <!-- <div class="input-group-prepend">
-                                </div> -->
+                    <form action="email-form" class="form" role="form">
+                        <div class="row">
+                            <div class="col-md-6">
+
+                                <!-- Name -->
+                                <div class="form-group">
+                                    <label class="form-control" for="name">Name</label>
+                                    <input id="name" type="text" name="name" placeholder="Your Name" class="form-control bg-dark text-white" > 
+                                </div>
+        
+                                <!-- Email -->
+                                <div class="form-group">
+                                    <label class="form-control" for="email">Email</label>
+                                    <input id="email" type="text" name="email" placeholder="Your Email" class="form-control bg-dark text-white" >
+                                </div>
                             </div>
+                            <div class="col-md-6">
+                                <!-- Message -->
+                                <div class="form-group">
+                                    <textarea id="message" class="form-control" name="message" id="message-area" cols="30" rows="5"></textarea>
+                                </div>
+        
+                                <!-- Arrow -->
+                                <div class="form-group">
+                                    <span class="input-group-text">
+                                        <button id="form-button" class="btn btn-default" href="#">
+                                            <i class="fas fa-arrow-right" style="width: fit-content;height: auto;"></i>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+    
                         </div>
                     </form>
                 </div>
+
+                <!-- Social -->
                 <div id="footer-content-right" class="footer-module col-md-2">
                     <h2 id="follow" class="text-light">Follow Us!</h2>
                     <p class=""></p>
                     <div class="footer-content column">
                         <a href="#">
                             <i class="fab fa-facebook-f fa-2x"></i>
-                        </a>x
+                        </a>
                         <a href="#">
                             <i class="fab fa-instagram fa-2x ml-2"></i>
                         </a>

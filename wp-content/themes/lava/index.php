@@ -24,21 +24,24 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
     <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Custom CSS Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="style-test.css" media="screen">
 
-    <!-- PINYON SCRIPT -->
+    <!-- FONTS -->
+
+    <!-- Pinyon Script -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Pinyon+Script&display=swap" rel="stylesheet">   
     
-    <!-- RALEWAY LIGHT 300
+    <!-- Raleway Light 300
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> -->
 
-    <!-- RIGHTEOUS -->
+    <!-- Righteous -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
@@ -74,8 +77,16 @@
                     <ul id="nav-items" class="navbar-nav">
                         <li class="nav-item">
                             <div class="nav-link-tab">
-                                <a href="#" class="nav-link" target="">
-                                Home
+                                <a href="#intro-section" class="nav-link" target="">
+                                About Us
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <div class="nav-link-tab">
+                                <a href="#faces-section" class="nav-link" target="">
+                                    Our Team
                                 </a>
                             </div>
                         </li>
@@ -84,7 +95,7 @@
 
                         <li class="nav-item dropdown">
                             <div class="nav-link-tab">
-                                <a href="#" class="nav-link" target="">
+                                <a href="#services-section" class="nav-link" target="">
                                     Services
                                 </a>
                             </div>
@@ -100,7 +111,15 @@
                         </li>
                         <li class="nav-item">
                             <div class="nav-link-tab">
-                                <a href="#" class="nav-link" target="">
+                                <a href="#app-section" class="nav-link" target="">
+                                    Downloads            
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <div class="nav-link-tab">
+                                <a href="#footer-container" class="nav-link" target="">
                                     Contact
                                 </a>
                             </div>
@@ -109,13 +128,12 @@
                 </div>
             </div>
         </nav>
-    </div>
-
+    </div>    
     <!-- HEADER SECTION-->
 
     <header id="header-container" class="container-fluid text-center overlay">        
-        <div id="header-intro" class="row">
-            <div class="col-md-7 col-sm-12">
+        <div id="header-intro" class="row pt-4 pb-4">
+            <div class="col-md-7 col-sm-12 ">
                 <div class="title-section">
                     <h1 class="limelight-font"><b>The Lava Theme</b></h1>
                     <h3 class="pt-2"><i>A Sizzling Theme to Heat Up Your Business</i></h3>
@@ -134,39 +152,44 @@
     <main>
 
         <!-- INTRO SECTION -->
-
-        <section id="intro-section" class="container-fluid pt-4 pb-4">
+        <section id="intro-section" class="container-fluid">
+            <div class="row pt-4 pb-4">
+                <div class="col-md-12 col-sm-12">
+                    <h1 class="text-center">About Us</h1><br>
+                    <p class="text-left big-margin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eveniet libero asperiores debitis perspiciatis, in beatae ex aspernatur rerum quia qui laudantium nobis recusandae corrupti natus porro laboriosam iusto facere. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eveniet libero asperiores debitis perspiciatis, in beatae ex aspernatur rerum quia qui laudantium nobis recusandae corrupti natus porro laboriosam iusto facere. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eveniet libero asperiores debitis perspiciatis, in beatae ex aspernatur rerum quia qui laudantium nobis recusandae corrupti natus porro laboriosam iusto facere. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque repellendus optio ut aperiam, aliquid debitis perferendis distinctio magnam officia modi! Adipisci suscipit dignissimos, consectetur maiores tempora quisquam totam? Veritatis, voluptatibus.</p>
+                </div>
+            </div>
+            <hr>
             <container class="text-center justify-content-center">
-                <div class="row">
+                <div class="row pt-4 pb-4">
                     <div class="col-md-6">
                         <img class="section-1-img" src="landscape1.jpg" alt="section 1 image 1">
-                        <div class="panel">
-                            <h1 class="text-center pt-4">Content</h1>
-                            <!-- paragraph with top padding of 4px ('pt-4') -->
-                            <p class="text-left ml-2 mr-2 pt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, ea? Nulla neque ipsa facilis molestias quasi. Voluptate eius dolor asperiores suscipit minima sunt vitae doloribus nemo iste, facilis, optio omnis?</p>
+                        <div class="panel pt-4 pb-4">
+                            <h1 class="text-center pb-4">Content</h1>
+                            <!-- paragraph with top padding of 4px (') -->
+                            <p class="text-left ml-4 mr-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum architecto quia numquam eaque impedit ea quos fugit non, voluptatibus eius! Excepturi reiciendis labore debitis ratione voluptas. Nemo qui hic natus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic quos dolore voluptas. Corrupti, culpa vero unde omnis perferendis voluptatum illum commodi eveniet quis quas minus quae quia officia! Suscipit, magni! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, ea? Nulla neque ipsa facilis molestias quasi. Voluptate eius dolor asperiores suscipit minima sunt vitae doloribus nemo iste, facilis, optio omnis?</p>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <img class="section-1-img" src="landscape2.jpg" alt="section 1 image 2">
-                        <div class="panel">
-                            <h1 class="text-center pt-4">Content</h1>
-                            <!-- paragraph with top padding of 4px ('pt-4') -->
-                            <p class="text-left ml-2 mr-2 pt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, ea? Nulla neque ipsa facilis molestias quasi. Voluptate eius dolor asperiores suscipit minima sunt vitae doloribus nemo iste, facilis, optio omnis?</p>
+                        <div class="panel pt-4 pb-4">
+                            <h1 class="text-center pb-4">Content</h1>
+                            <!-- paragraph with top padding of 4px (') -->
+                            <p class="text-left ml-4 mr-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, ea? Nulla neque ipsa facilis molestias quasi. Voluptate eius dolor asperiores suscipit minima sunt vitae doloribus nemo iste, facilis, optio omnis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint omnis distinctio beatae, voluptatum amet modi. Numquam vel, odio, repellat explicabo placeat nesciunt perferendis quasi deleniti laboriosam quisquam eos dolorum accusamus.</p>
                         </div>
                     </div>
                 </div>
+                <hr>
             </container>
         </section>
 
-        <hr>
-
         <!-- CARD SECTION -->
 
-        <section id="card-section" class="section-2 container-fluid p-4">
-            <div class="row">
+        <section id="services-section" class="section-2 container-fluid">
+            <div class="row pt-4 pb-4">
                 <div class="col-md-12 col-sm-12">
                     <h1 class="text-center">Our Services</h1><br>
-                    <p style="color: whitesmoke;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eveniet libero asperiores debitis perspiciatis, in beatae ex aspernatur rerum quia qui laudantium nobis recusandae corrupti natus porro laboriosam iusto facere.</p>
+                    <p class="big-margin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eveniet libero asperiores debitis perspiciatis, in beatae ex aspernatur rerum quia qui laudantium nobis recusandae corrupti natus porro laboriosam iusto facere.</p>
                 </div>
             </div>
             <div class="container-fluid text-center">
@@ -216,25 +239,32 @@
 
         <!-- APP SECTION -->
 
-        <section id="app-section" class="section-3 container-fluid pt-4 text-center">
-            <div class="row">
+        <section id="app-section" class="section-3 container-fluid text-center">
+            <div class="row pt-4 pb-4">
                 <div class="col-md-12 col-sm-12">
                     <h1>Download Our App</h1><br>
-                    <p style="color: whitesmoke;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eveniet libero asperiores debitis perspiciatis, in beatae ex aspernatur rerum quia qui laudantium nobis recusandae corrupti natus porro laboriosam iusto facere.</p>
+                    <p class="big-margin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi consequuntur facilis possimus, non incidunt delectus excepturi quibusdam ea quae quisquam rerum alias asperiores, numquam sapiente quaerat ut maiores doloremque itaque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eveniet libero asperiores debitis perspiciatis, in beatae ex aspernatur rerum quia qui laudantium nobis recusandae corrupti natus porro laboriosam iusto facere.</p>
                 </div>
             </div>
             <!-- Platform row -->
-            <div id="app-icon-row" class="platform row">
+            <div id="app-icon-row" class="row platform pt-4 pb-4">
                 <div class="col-md-6 col-sm-12 text-right">
                     <div class="desktop shadow-lg">
-                        <div class="d-flex flex-row flex-wrap justify-content-center">
-                            <!-- Desktop icon that is 3x larger than normal (fa-3x) -->
-                            <i class="fas fa-desktop fa-3x py-2 pr-3"></i>
+                        <div class="d-flex flex-row flex-wrap justify-content-center pt-4 pb-4 platform-content">
+                            <!-- Desktop icon that is 3x larger than normal (fa-3x) --> 
                             <div class="text text-left">
                                 <!-- padding 1, margin 0 -->
-                                <h3 class="pt-1 m-0">Desktop</h3>
-                                <p class="p-0 m-0">For your computer needs</p>
-                                <a href="#" class="btn btn-primary">Download</a>
+                                <h3 class="pt-2 m-0 text-center"><i class="fas fa-desktop fa-2x py-2 pr-3"></i>Desktop</h3>
+                                <p class="p-4 ml-2 mr-2">Get in touch with our services on your Windows Device.</p>                                
+                                <center>
+                                    <a href="#" class="btn btn-primary flex-nowrap justify-content-center text-center">
+                                        <i class="fa-brands fa-windows fa-2x" aria-hidden="true"></i>
+                                        Download<br>
+                                        <small class="muted"> 
+                                            <i>For Windows</i> 
+                                        </small>
+                                    </a>
+                                </center>
                             </div>
                         </div>
                     </div>
@@ -242,14 +272,20 @@
                 <div class="col-md-6 col-sm-12 text-left">
                     <!-- Subtle shadow effect over this section of the page -->
                     <div class="desktop shadow-lg">
-                        <div class="d-flex flex-row flex-wrap justify-content-center">
+                        <div class="d-flex flex-row flex-wrap justify-content-center pt-4 pb-4">
                             <!-- Desktop icon that is 3x larger than normal (fa-3x) -->
-                            <i class="fas fa-mobile fa-3x py-2 pr-3"></i>
                             <div class="text text-left">
-                                <!-- padding 1, margin 0 -->
-                                <h3 class="pt-1 m-0">Mobile</h3>
-                                <p class="p-0 m-0">For your mobile needs</p>
-                                <a href="#" class="btn btn-primary">Download</a>
+                                <h3 class="pt-2 m-0"><i class="fas fa-mobile fa-2x py-2 pr-3"></i>Mobile</h3>
+                                <p class="p-4 m-2 mr-2">For your mobile needs</p>   
+                                <center>
+                                    <a href="#" class="btn btn-primary flex-nowrap justify-content-center text-center">
+                                        <i class="fa-brands fa-android fa-2x" aria-hidden="true"></i>
+                                        Download<br>
+                                        <small class="muted"> 
+                                            <i>For Android</i> 
+                                        </small>     
+                                    </a>
+                                </center>
                             </div>
                         </div>
                     </div>
@@ -257,22 +293,20 @@
             </div>
             <!-- Hero Unit here -->
             <hr>
-            <div class="row pt-4">
-                <div class="col-md-12 col-sm-12 p-4">
+            <dpt-iv class="row pt-4 pb-4">
+                <div class="col-md-12 col-sm-12">
                     <h1>What our Customers Say</h1><br>
-                    <p class="paramargin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima tempora placeat cum, eveniet ipsum eligendi ut quasi accusamus ratione ex delectus molestias ab excepturi ipsam optio illum veritatis unde ad.</p>
+                    <p class="text-left big-margin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam molestiae at obcaecati maxime inventore labore praesentium ipsum, dolore, repellat eius voluptates quas, voluptas assumenda iste? Perferendis, aspernatur! Maxime, itaque quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, eos aut! Modi eaque reprehenderit quasi enim. Eos, rem maxime! Numquam atque illo, quae odio sed autem consequatur libero veritatis architecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque velit quidem, distinctio quisquam reprehenderit quis veniam autem laudantium voluptatem, unde numquam earum minus sunt ab quae dolorum tempore iste ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima tempora placeat cum, eveniet ipsum eligendi ut quasi accusamus ratione ex delectus molestias ab excepturi ipsam optio illum veritatis unde ad.</p>
                 </div>
             </div>
-
+            <hr>
         </section>
 
-        <hr>
-        
         <!-- FACES SECTION -->
         
-        <section id="faces-section" class="section-4 pt-4">
-            <div class="row pt-4">
-                <div class="col-md-12 col-sm-12 p-4">
+        <section id="faces-section" class="section-4">
+            <div class="row pt-4 pb-4">
+                <div class="col-md-12 col-sm-12">
                     <h1 class="text-center">Our Team</h1><br>
                 </div>
             </div>
@@ -295,7 +329,7 @@
         </section>
         <!-- <section>
             <div class="container-fluid">
-                <div class="row">
+                <div class="row pt-4 pb-4">
                     <div class="col-md-6 col-lg-12">
                         <div class="form">
                             <label for="name" class="label"></label>
@@ -310,7 +344,7 @@
     <!-- FOOTER -->
     
     <footer>
-        <div id="footer-container" class="container-fluid pt-4">
+        <div id="footer-container" class="container-fluid">
             <div id="footer-content-left" class="footer-module row text-left">
                 <div class="col-md-5">
                     <h2 class="text-light">
@@ -345,7 +379,7 @@
                     <div class="footer-content column">
                         <a href="#">
                             <i class="fab fa-facebook-f fa-2x"></i>
-                        </a>
+                        </a>x
                         <a href="#">
                             <i class="fab fa-instagram fa-2x ml-2"></i>
                         </a>
@@ -358,8 +392,8 @@
                     </div>
                 </div>
             </div>
-            <div id="copyright" class="row">
-                <p class="pt-4">
+            <div id="copyright" class="row pt-4 pb-4">
+                <p class="text-center">
                     <h6>&copy;2022 | This page was made by <span>Cinderblock Labs</span></h6>    
                 </p> 
             </div>

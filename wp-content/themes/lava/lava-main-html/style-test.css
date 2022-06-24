@@ -69,11 +69,10 @@ hr {
 }
 
 /* REMOVES BLUE LINK COLOR */
-a, a:hover,a:focus,a:active {
+a,a:hover,a:focus,a:active {
     text-decoration: none;
     color:inherit;
 }
-
 
 main {
     padding-bottom: 800px;

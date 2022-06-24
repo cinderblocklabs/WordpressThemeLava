@@ -46,7 +46,19 @@
 /* GLOBALS */
 
 html {
-    height: 100vh;
+    height: auto;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bone);
+    font-family: var(--raleway-font);
+    /* min-height: 100vh; */
+    height: auto;
+    max-width: 100vw;
+    margin-top: 11vh;
+    position: absolute;
+    overflow-x: hidden;
 }
 
 hr {
@@ -62,16 +74,6 @@ a, a:hover,a:focus,a:active {
     color:inherit;
 }
 
-body {
-    background-color: var(--bone);
-    font-family: var(--raleway-font);
-    /* min-height: 100vh; */
-    height: 100vh;
-    max-width: 100vw;
-    margin-top: 11vh;
-    position: absolute;
-    overflow-x: hidden;
-}
 
 main {
     padding-bottom: 800px;
@@ -191,11 +193,11 @@ footer {
     position: relative;
     color: whitesmoke;
     width: 100%;
-    height: 350px;
-    margin-top: -350px;
+    height: 80vh;
+    margin-top: -50vh;
     bottom: 0;
     clear:both;
-    transform: translateZ(-350px);
+    /* transform: translateY(-50vh);  */
     z-index: 2;
 }
 
@@ -328,6 +330,11 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: row;
 }
 
+.big-margin {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
 .card {
     margin: 2px 8px 2px 8px;
     padding: 4px;
@@ -335,6 +342,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 15vw;
     z-index: -1;
 }
+
+
 
 .img-col {
     height: 400px;
@@ -371,11 +380,16 @@ input[type=text] {
 /* ANIMATIONS */
 
 /* MENU ITEM FLICKER ANIMATION */
+
 #navigation a:hover {
     animation: flicker 1.5s ease infinite;
     transition: height 1.5s;
     transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
     animation-fill-mode: forwards;
+}
+
+.nav-item:hover {
+    background-color: black;
 }
 
 @keyframes flicker {
