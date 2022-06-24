@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
     <!-- Title -->
-    <title>Custom Wordpress Theme</title>
+    <title>LAVA</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -23,11 +23,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
-    <!-- FontAwsome -->
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 
     <!-- Custom CSS Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="style-test.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen">
 
     <!-- PINYON SCRIPT -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -45,19 +45,26 @@
 
 </head>
 
-<!-- NEED TO VERTICALLY ALIGN DIV ITEMS -->
-
 <body>
+    
     <!-- NAVBAR -->
+    
     <!-- container with no padding (p-0) -->
+
+    <!-- Need to Fix Dropdown menu and add targets to each of the links -->
+    <!-- I also want to add click animation for links when user clicks a link -->
+
     <div id="navigation" class="container-fluid p-0 desktop shadow-md">
         <nav class="navbar navbar-expand-lg section-color">
             <div class="container-fluid">
+                
                 <a class="navbar-brand limelight-font" style="color:orange;" href="#"><h1><i>Lava</i></h1></a>
+                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
                     aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                
                 <div class="collapse navbar-collapse">
                     <!-- div mr-auto ('margin-right auto') -->
                     <div class="mr-auto"></div>
@@ -67,8 +74,8 @@
                     <ul id="nav-items" class="navbar-nav">
                         <li class="nav-item">
                             <div class="nav-link-tab">
-                                <a href="#" class="nav-link">
-                                    Home
+                                <a href="#" class="nav-link" target="">
+                                Home
                                 </a>
                             </div>
                         </li>
@@ -77,7 +84,7 @@
 
                         <li class="nav-item dropdown">
                             <div class="nav-link-tab">
-                                <a href="#" class="nav-link">
+                                <a href="#" class="nav-link" target="">
                                     Services
                                 </a>
                             </div>
@@ -93,7 +100,7 @@
                         </li>
                         <li class="nav-item">
                             <div class="nav-link-tab">
-                                <a href="#" class="nav-link">
+                                <a href="#" class="nav-link" target="">
                                     Contact
                                 </a>
                             </div>
@@ -104,7 +111,8 @@
         </nav>
     </div>
 
-    <!-- HEADER -->
+    <!-- HEADER SECTION-->
+
     <header id="header-container" class="container-fluid text-center overlay">        
         <div id="header-intro" class="row">
             <div class="col-md-7 col-sm-12">
@@ -122,16 +130,18 @@
                 <img class="bkg-img" src="bird.png" alt="Image from freesvg.com">
             </div>
         </div>
-    <hr>
     </header>
     <main>
-        <section id="section-1" class="container-fluid pt-4 pb-4">
-            <container class="text-center">
+
+        <!-- INTRO SECTION -->
+
+        <section id="intro-section" class="container-fluid pt-4 pb-4">
+            <container class="text-center justify-content-center">
                 <div class="row">
                     <div class="col-md-6">
                         <img class="section-1-img" src="landscape1.jpg" alt="section 1 image 1">
                         <div class="panel">
-                            <center><h1 class="pt-4">Content</h1></center>
+                            <h1 class="text-center pt-4">Content</h1>
                             <!-- paragraph with top padding of 4px ('pt-4') -->
                             <p class="text-left ml-2 mr-2 pt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, ea? Nulla neque ipsa facilis molestias quasi. Voluptate eius dolor asperiores suscipit minima sunt vitae doloribus nemo iste, facilis, optio omnis?</p>
                         </div>
@@ -139,7 +149,7 @@
                     <div class="col-md-6">
                         <img class="section-1-img" src="landscape2.jpg" alt="section 1 image 2">
                         <div class="panel">
-                            <center><h1 class="pt-4">Content</h1></center>
+                            <h1 class="text-center pt-4">Content</h1>
                             <!-- paragraph with top padding of 4px ('pt-4') -->
                             <p class="text-left ml-2 mr-2 pt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, ea? Nulla neque ipsa facilis molestias quasi. Voluptate eius dolor asperiores suscipit minima sunt vitae doloribus nemo iste, facilis, optio omnis?</p>
                         </div>
@@ -150,42 +160,51 @@
 
         <hr>
 
-        <section class="section-2 container-fluid p-4">
+        <!-- CARD SECTION -->
+
+        <section id="card-section" class="section-2 container-fluid p-4">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <h1 class="text-center">Our Services</h1><br>
+                    <p style="color: whitesmoke;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eveniet libero asperiores debitis perspiciatis, in beatae ex aspernatur rerum quia qui laudantium nobis recusandae corrupti natus porro laboriosam iusto facere.</p>
+                </div>
+            </div>
             <div class="container-fluid text-center">
+                
                 <!-- desktop shadow over this section -->
                 <div class="desktop shadow-lg">
                     <!-- addign a flex container with wrapping and centered (d-flex flex-md-row flex-wrap justify-content-center) -->
                     <div class="cards d-flex flex-md-row flex-wrap justify-content-center section-color">
-                        <div class="card">
+                        <!-- <div class="card">
                             <img src="#" alt="card image top" class="card-img-top">
                             <div class="card-body">
-                                <h1 class="card-title">1234</h1>
+                                <h3 class="card-title"></h3>
                                 <p class="card-text">services galore</p>
                                 <a href="#" class="btn btn-primary">Go Somewhere</a>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="card">
-                            <img src="#" alt="card image top" class="card-img-top">
+                            <img src="satisfaction.png" alt="card image top" class="card-img-top">
                             <div class="card-body">
-                                <h1 class="card-title">1234</h1>
+                                <h3 class="card-title">Satisfaction<br>Guarantee</h3>
                                 <p class="card-text">services galore</p>
-                                <a href="#" class="btn btn-primary">Go Somewhere</a>
+                                <a href="#" class="btn btn-primary">More Info</a>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="#" alt="card image top" class="card-img-top">
+                            <img src="satisfaction.png" alt="card image top" class="card-img-top">
                             <div class="card-body">
-                                <h1 class="card-title">1234</h1>
+                                <h3 class="card-title">Friendly<br>Staff</h3>
                                 <p class="card-text">services galore</p>
-                                <a href="#" class="btn btn-primary">Go Somewhere</a>
+                                <a href="#" class="btn btn-primary">More Info</a>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="#" alt="card image top" class="card-img-top">
+                            <img src="satisfaction.png" alt="card image top" class="card-img-top">
                             <div class="card-body">
-                                <h1 class="card-title">1234</h1>
+                                <h3 class="card-title">Great<br>Service</h3>
                                 <p class="card-text">services galore</p>
-                                <a href="#" class="btn btn-primary">Go Somewhere</a>
+                                <a href="#" class="btn btn-primary">More Info</a>
                             </div>
                         </div>
                     </div>
@@ -194,6 +213,8 @@
         </section>
 
         <hr>
+
+        <!-- APP SECTION -->
 
         <section id="app-section" class="section-3 container-fluid pt-4 text-center">
             <div class="row">
@@ -213,6 +234,7 @@
                                 <!-- padding 1, margin 0 -->
                                 <h3 class="pt-1 m-0">Desktop</h3>
                                 <p class="p-0 m-0">For your computer needs</p>
+                                <a href="#" class="btn btn-primary">Download</a>
                             </div>
                         </div>
                     </div>
@@ -227,13 +249,14 @@
                                 <!-- padding 1, margin 0 -->
                                 <h3 class="pt-1 m-0">Mobile</h3>
                                 <p class="p-0 m-0">For your mobile needs</p>
+                                <a href="#" class="btn btn-primary">Download</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Hero Unit here -->
-
+            <hr>
             <div class="row pt-4">
                 <div class="col-md-12 col-sm-12 p-4">
                     <h1>What our Customers Say</h1><br>
@@ -244,8 +267,15 @@
         </section>
 
         <hr>
-
+        
+        <!-- FACES SECTION -->
+        
         <section id="faces-section" class="section-4 pt-4">
+            <div class="row pt-4">
+                <div class="col-md-12 col-sm-12 p-4">
+                    <h1 class="text-center">Our Team</h1><br>
+                </div>
+            </div>
             <div class="container text-center flex-wrap">
                 <div class="row team-row">
                     <div class="col-md-4">
@@ -263,9 +293,21 @@
                 </div>
             </div>
         </section>
+        <!-- <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-lg-12">
+                        <div class="form">
+                            <label for="name" class="label"></label>
+                            <input class="input" type="text"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
     </main>
 
-    <hr>
+    <!-- FOOTER -->
     
     <footer>
         <div id="footer-container" class="container-fluid pt-4">
@@ -328,15 +370,18 @@
 <!-- SCRIPTS -->
 <!-- MOBILE HAMBURGER MENU SCRIPT -->
 
-<script type="text/javascript" id="testButtonAction()">
-    alert("You have clicked the button")
-</script>
-
 <script type="text/javascript" id="hamburger()">
-
+    
 </script>
+
+<!-- Header Button Script -->
+
+<!-- <script type="text/javascript" id="testButtonAction()">
+    alert("You have clicked the button");
+</script> -->
 
 <!-- DROPDOWN MENU SCRIPT -->
+
 <script type="text/javascript" id="dropdown()">
     function myFunction() {
   var x = document.getElementById("myLinks");

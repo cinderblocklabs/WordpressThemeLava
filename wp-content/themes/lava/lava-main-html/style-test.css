@@ -328,6 +328,11 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: row;
 }
 
+.big-margin {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
 .card {
     margin: 2px 8px 2px 8px;
     padding: 4px;
@@ -335,6 +340,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 15vw;
     z-index: -1;
 }
+
+
 
 .img-col {
     height: 400px;
