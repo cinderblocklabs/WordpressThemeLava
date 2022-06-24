@@ -50,6 +50,15 @@ html {
     scroll-behavior: smooth;
 }
 
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 body {
     background-color: var(--bone);
     font-family: var(--raleway-font);
@@ -57,6 +66,7 @@ body {
     height: auto;
     max-width: 100vw;
     margin-top: 11vh;
+    margin-bottom: -11vh;
     position: absolute;
     overflow-x: hidden;
 }
@@ -66,13 +76,19 @@ hr {
     box-shadow: 0 20px 20px -20px #333; 
     height: 2px;
     width: 50vw;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 /* REMOVES BLUE LINK COLOR */
 a,a:hover,a:focus,a:active {
     text-decoration: none;
     color:inherit;
-}
+}   
 
 main {
     padding-bottom: 800px;
@@ -84,7 +100,13 @@ header {
     color: var(--bone);
     height: 100vh;
     width: 100%;
-    z-index: 1;
+    z-index: -1;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     /* animation: heatfade 10s ease-in infinite; */
 }
 
@@ -192,11 +214,11 @@ footer {
     position: relative;
     color: whitesmoke;
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     margin-top: -50vh;
     bottom: 0;
     clear:both;
-    /* transform: translateY(-50vh);  */
+    /* transform: translateY(50vh);   */
     z-index: 2;
 }
 
@@ -208,6 +230,12 @@ footer p {
 h1, h2, h3, h4, h5, h6 {
     margin: 0px;
     overflow-wrap: break-word;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .fab {
@@ -240,7 +268,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 11vh;
     width: 100%;
     overflow: hidden;
-    z-index: 2;
+    z-index: 3;
 }
 
 #navigation a {
