@@ -47,6 +47,7 @@
 
 html {
     height: auto;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -379,11 +380,16 @@ input[type=text] {
 /* ANIMATIONS */
 
 /* MENU ITEM FLICKER ANIMATION */
+
 #navigation a:hover {
     animation: flicker 1.5s ease infinite;
     transition: height 1.5s;
     transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
     animation-fill-mode: forwards;
+}
+
+.nav-item:hover {
+    background-color: black;
 }
 
 @keyframes flicker {
