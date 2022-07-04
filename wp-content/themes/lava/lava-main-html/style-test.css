@@ -170,6 +170,11 @@ header img {
     height: auto;
 }
 
+textarea {
+    resize: none;
+    columns: 2;
+}
+
 #dropdown-menu {
     z-index: 3;
 }
