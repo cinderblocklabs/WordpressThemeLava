@@ -35,9 +35,9 @@
     --limelight-font: 'Limelight', cursive;
     --raleway-font: 'Raleway', sans-serif;
     --section-color: rgb(186;  148;  224);
+    --gold-color: rgb(255, 180, 0);
     --orange-lingrad: linear-gradient(rgb(255, 8, 0), rgb(255, 166, 0));
     --orange-lingrad-reverse: linear-gradient(rgb(255, 166, 0),rgb(255, 8, 0));
-    --orange: rgba(255, 38, 0, 0.788);
     --basalt: rgb(32, 37, 41);
     --bone: rgb(246, 246, 216);
     --bone-lingrad: linear-gradient(rgb(246, 246, 216),whitesmoke);
@@ -72,7 +72,7 @@ body {
 }
 
 hr {
-    background-color: orange;
+    background-color: var(--gold-color);
     box-shadow: 0 20px 20px -20px #333; 
     height: 2px;
     width: 50vw;
@@ -134,7 +134,7 @@ header {
 
 .title-section {
     font-family: var(--);
-    color: orange;
+    color: var(--gold-color);
 }
 
 #header-container {

@@ -364,31 +364,33 @@
                                 <!-- Name -->
                                 <div class="form-group">
                                     <label class="form-control" for="name">Name</label>
-                                    <input id="name" type="text" name="name" placeholder="Your Name" class="form-control bg-dark text-white" > 
+                                    <input id="name" type="text" name="name" placeholder="(Required) Your Name" class="form-control bg-dark text-white" required> 
                                 </div>
         
                                 <!-- Email -->
                                 <div class="form-group">
                                     <label class="form-control" for="email">Email</label>
-                                    <input id="email" type="text" name="email" placeholder="Your Email" class="form-control bg-dark text-white" >
+                                    <input id="email" type="text" name="email" placeholder="(Required) Your Email" class="form-control bg-dark text-white" required>
                                 </div>
                             </div>
+                            
+                        </div>
+                        <div class="row">
                             <div class="col-md-6">
                                 <!-- Message -->
                                 <div class="form-group">
-                                    <textarea id="message" class="form-control" name="message" id="message-area" cols="30" rows="5"></textarea>
+                                    <textarea id="message" class="form-control" name="message" id="message-area" cols="30" rows="5" placeholder="(Optional) Leave a Message..."></textarea>
                                 </div>
         
                                 <!-- Arrow -->
                                 <div class="form-group">
                                     <span class="input-group-text">
                                         <button id="form-button" class="btn btn-default" href="#">
-                                            <i class="fas fa-arrow-right" style="width: fit-content;height: auto;"></i>
+                                            <i class="fas fa-arrow-right"></i>
                                         </button>
                                     </span>
                                 </div>
                             </div>
-    
                         </div>
                     </form>
                 </div>
