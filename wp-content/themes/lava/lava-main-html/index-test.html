@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Custom CSS Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="style-test.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="assets/css/style-test.css" media="screen">
 
     <!-- FONTS -->
 
@@ -36,11 +36,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Pinyon+Script&display=swap" rel="stylesheet">   
     
-    <!-- Raleway Light 300
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> -->
-
     <!-- Righteous -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -141,7 +136,7 @@
             <!-- with 25% height added ('h-25') -->
             <div class="col-md-5 col-sm-12 h-25">
                 <!-- MAIN BACKGROUND IMAGE -->
-                <img class="bkg-img" src="bird.png" alt="Image from freesvg.com">
+                <img class="bkg-img" src="assets/images/thematic/bird.png" alt="Image from freesvg.com">
             </div>
         </div>
     </header>
@@ -162,7 +157,7 @@
             <container class="text-center justify-content-center">
                 <div class="row pt-4 pb-4">
                     <div class="col-md-6">
-                        <img class="section-1-img" src="landscape1.jpg" alt="section 1 image 1">
+                        <img class="section-1-img" src="assets/images/backgrounds/landscape1.jpg" alt="section 1 image 1">
                         <div class="panel pt-4 pb-4">
                             <h1 class="text-center pb-4">Our History</h1>
                             <!-- paragraph with top padding of 4px (') -->
@@ -170,7 +165,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <img class="section-1-img" src="landscape2.jpg" alt="section 1 image 2">
+                        <img class="section-1-img" src="assets/images/backgrounds/landscape2.jpg" alt="section 1 image 2">
                         <div class="panel pt-4 pb-4">
                             <h1 class="text-center pb-4">Our Mission</h1>
                             <!-- paragraph with top padding of 4px (') -->
@@ -196,11 +191,11 @@
             <div class="container-fluid text-center pt-4 pb-4">
                 
                 <!-- desktop shadow over this section -->
-                <div class="desktop shadow-lg">
+                <div class="desktop shadow-md">
                     <!-- addign a flex container with wrapping and centered (d-flex flex-md-row flex-wrap justify-content-center) -->
                     <div class="cards d-flex flex-md-row flex-wrap justify-content-center section-color">
                         <div class="card">
-                            <img src="satisfaction.png" alt="card image top" class="card-img-top">
+                            <img src="assets/images/ribbons/satisfaction.png" alt="card image top" class="card-img-top">
                             <div class="card-body">
                                 <h3 class="card-title">Satisfaction<br>Guarantee</h3>
                                 <p class="card-text">services galore</p>
@@ -208,7 +203,7 @@
                             </div>
                         </div>
                         <div class="card">
-                            <img src="satisfaction.png" alt="card image top" class="card-img-top">
+                            <img src="assets/images/ribbons/satisfaction.png" alt="card image top" class="card-img-top">
                             <div class="card-body">
                                 <h3 class="card-title">Friendly<br>Staff</h3>
                                 <p class="card-text">services galore</p>
@@ -216,7 +211,7 @@
                             </div>
                         </div>
                         <div class="card">
-                            <img src="satisfaction.png" alt="card image top" class="card-img-top">
+                            <img src="assets/images/ribbons/satisfaction.png" alt="card image top" class="card-img-top">
                             <div class="card-body">
                                 <h3 class="card-title">Great<br>Service</h3>
                                 <p class="card-text">services galore</p>
@@ -225,79 +220,82 @@
                         </div>
                     </div>
                 </div>
+
             </div>
 
             <!-- Customer Testimony -->
 
-            <div class="row">
-                <div class="row pt-4 pb-4">
-                    <div class="col-md-12 col-sm-12">
-                        <center>
-                            <h1 class="text-center">What our Customers Say</h1>
-                        </center>
+            <div id="testimonials" class="container-fluid text-center pt-4 pb-4">
+                <div class="row">
+                    <div class="row pt-4 pb-4">
+                        <div class="col-md-12 col-sm-12 flex-row justify-content-center">
+                            <!-- WILL NOT CENTER!!! -->
+                            <center>
+                                <h1 class="text-center">What our Customers Say</h1>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="testimonial flex-wrap justify-content-center">
+                            <blockquote>
+                                <p class="text-left big-margin">
+                                    <i>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis porro labore voluptatibus impedit voluptates rem quos blanditiis, unde similique totam. Deleniti molestias tempore officia error. Harum modi aliquid odio sunt?</p>
+                                    </i><br>
+                                <span class="name">
+                                    -Julie
+                                </span>
+                            </blockquote>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="testimonial big-margin">
+                            <blockquote>
+                                <p class="text-left">
+                                    <i>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis porro labore voluptatibus impedit voluptates rem quos blanditiis, unde similique totam. Deleniti molestias tempore officia error. Harum modi aliquid odio sunt?</p>
+                                    </i><br>
+                                <span class="name">
+                                    -Brock
+                                </span>
+                            </blockquote>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-3">
+                        <div class="testimonial">
+                            <blockquote>
+                                <p class="text-left big-margin">
+                                    <i>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis porro labore voluptatibus impedit voluptates rem quos blanditiis, unde similique totam. Deleniti molestias tempore officia error. Harum modi aliquid odio sunt?</p>
+                                    </i><br>
+                                <span class="name">
+                                    -Sarah
+                                </span>
+                            </blockquote>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="testimonial">
+                            <blockquote>
+                                <p class="text-left big-margin">
+                                    <i>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis porro labore voluptatibus impedit voluptates rem quos blanditiis, unde similique totam. Deleniti molestias tempore officia error. Harum modi aliquid odio sunt?</p>
+                                    </i><br>
+                                <span class="name">
+                                    -Joel
+                                </span>
+                            </blockquote>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="testimonial">
-                        <blockquote>
-                            <p class="text-left">
-                                <i>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis porro labore voluptatibus impedit voluptates rem quos blanditiis, unde similique totam. Deleniti molestias tempore officia error. Harum modi aliquid odio sunt?</p>
-                                </i><br>
-                            <span class="name">
-                                -Julie
-                            </span>
-                        </blockquote>
-                    </div>
-                </div>
-                
-                <div class="col-md-3">
-                    <div class="testimonial">
-                        <blockquote>
-                            <p class="text-left">
-                                <i>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis porro labore voluptatibus impedit voluptates rem quos blanditiis, unde similique totam. Deleniti molestias tempore officia error. Harum modi aliquid odio sunt?</p>
-                                </i><br>
-                            <span class="name">
-                                -Julie
-                            </span>
-                        </blockquote>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="testimonial">
-                        <blockquote>
-                            <p class="text-left">
-                                <i>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis porro labore voluptatibus impedit voluptates rem quos blanditiis, unde similique totam. Deleniti molestias tempore officia error. Harum modi aliquid odio sunt?</p>
-                                </i><br>
-                            <span class="name">
-                                -Julie
-                            </span>
-                        </blockquote>
-                    </div>
-                </div>
-                
-                <div class="col-md-3">
-                    <div class="testimonial">
-                        <blockquote>
-                            <p class="text-left">
-                                <i>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis porro labore voluptatibus impedit voluptates rem quos blanditiis, unde similique totam. Deleniti molestias tempore officia error. Harum modi aliquid odio sunt?</p>
-                                </i><br>
-                            <span class="name">
-                                -Julie
-                            </span>
-                        </blockquote>
-                    </div>
-                </div>
-
-
-            </div>
         </section>
 
         <!-- Divider -->
@@ -316,7 +314,7 @@
             <!-- Platform row -->
             <div id="app-icon-row" class="row platform pt-4 pb-4">
                 <div class="col-md-6 col-sm-12 text-right">
-                    <div class="desktop shadow-lg">
+                    <div class="desktop shadow-sm">
                         <div class="d-flex flex-row flex-wrap justify-content-center pt-4 pb-4 platform-content">
                             <!-- Desktop icon that is 3x larger than normal (fa-3x) --> 
                             <div class="text text-left">
@@ -338,7 +336,7 @@
                 </div>
                 <div class="col-md-6 col-sm-12 text-left">
                     <!-- Subtle shadow effect over this section of the page -->
-                    <div class="desktop shadow-lg">
+                    <div class="desktop shadow-sm">
                         <div class="d-flex flex-row flex-wrap justify-content-center pt-4 pb-4">
                             <!-- Desktop icon that is 3x larger than normal (fa-3x) -->
                             <div class="text text-left">
@@ -358,29 +356,45 @@
                     </div>
                 </div>
             </div>
-            <!-- Hero Unit here -->
-            <hr>
-            <hr>
         </section>
-
-        <!-- FACES SECTION -->
         
+        <!-- Divider -->
+        <hr>
+        
+        <!-- FACES SECTION -->
+
         <section id="faces-section" class="section-4">
+            
+            <!-- Title -->
+
             <div class="row pt-4 pb-4">
                 <div class="col-md-12 col-sm-12">
                     <h1 class="text-center">Our Team</h1><br>
                 </div>
             </div>
+
+            <!-- Face Images -->
+
             <div class="container text-center flex-wrap">
+                
                 <div class="row team-row">
+                
+                    <!-- Face 1 -->
+
                     <div class="col-md-4">
                         <div id="face1" class="img-col desktop shadow-md">
                         </div>
                     </div>
+
+                    <!-- Face 2 -->
+
                     <div class="col-md-4">
                         <div id="face2" class="img-col desktop shadow-md">
                         </div>
                     </div>
+
+                    <!-- Face 3 -->
+
                     <div class="col-md-4">
                         <div id="face3" class="img-col desktop shadow-md">
                         </div>
@@ -409,9 +423,12 @@
 
                 <!-- Contact Form -->
                 <div id="footer-content-center" class="footer-module col-md-5">
+                    
                     <h2 class="text-light">Newsletter</h2>
                     <p class="footer-content">Stay Updated!</p><br>
+                    
                     <form action="email-form" class="form" role="form">
+                        
                         <div class="row">
                             <div class="col-md-6">
 
@@ -429,8 +446,10 @@
                             </div>
                             
                         </div>
+
                         <div class="row">
                             <div class="col-md-6">
+
                                 <!-- Message -->
                                 <div class="form-group">
                                     <textarea id="message" class="form-control" name="message" id="message-area" onfocus="this.value=''" cols="30" rows="5" placeholder="(Optional) Leave a Message..."></textarea>
@@ -450,27 +469,44 @@
 
                 <!-- Social -->
                 <div id="footer-content-right" class="footer-module col-md-2">
+            
                     <h2 id="follow" class="text-light">Follow Us!</h2>
-                    <p class=""></p>
+            
                     <div class="footer-content column">
+            
                         <a href="#">
+            
                             <i class="fab fa-facebook-f fa-2x"></i>
+            
                         </a>
+            
                         <a href="#">
+            
                             <i class="fab fa-instagram fa-2x ml-2"></i>
+            
                         </a>
+            
                         <a href="#">
+            
                             <i class="fab fa-twitter fa-2x ml-2"></i>
+            
                         </a>
+            
                         <a href="#">
+            
                             <i class="fab fa-youtube fa-2x ml-2"></i>
+            
                         </a>
                     </div>
                 </div>
             </div>
+
             <div id="copyright" class="row pt-4 pb-4">
+            
                 <p class="text-center">
+            
                     <h6>&copy;2022 | This page was made by <span>Cinderblock Labs</span></h6>    
+            
                 </p> 
             </div>
         </div>

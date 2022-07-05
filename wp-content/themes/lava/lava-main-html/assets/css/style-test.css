@@ -225,7 +225,7 @@ footer {
     width: 100%;
     height: 100vh;
     margin-top: -50vh;
-    bottom: 0;
+    bottom: 0;  
     clear:both;
     /* transform: translateY(50vh);   */
     z-index: 2;
@@ -404,12 +404,17 @@ label {
     width: 50px;
 }
 
+.name {
+    font-weight: bold;
+    font-style: italic;
+}
+
 /* ONLY TARGETS INPUTS OF TEXT TYPE */
 input[type=text] {
     background-image: url('searchicon.png');
     background-position: 10px 10px;
     background-repeat: no-repeat;
-  }
+}
 
 /* ANIMATIONS */
 

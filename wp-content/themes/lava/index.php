@@ -82,37 +82,32 @@
                                 </a>
                             </div>
                         </li>
-
-                        <li class="nav-item">
-                            <div class="nav-link-tab">
-                                <a href="#faces-section" class="nav-link" target="">
-                                    Our Team
-                                </a>
-                            </div>
-                        </li>
-
+                        
                         <!-- DROPDOWN MENU SECTION -->
 
                         <li class="nav-item dropdown">
-                            <div class="nav-link-tab">
-                                <a href="#services-section" class="nav-link" target="">
-                                    Services
-                                </a>
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Services
+                            </a>
+                            <div id="dropdown-menu" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#services-section">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
                             </div>
-                            <!-- <div class="dropdown">
-                                <a href="#" class="nav-link">
-                                    Services
-                                </a>
-                                <div class="dropdown-content">
-                                    <a href="#">Page 1</a>
-                                    <a href="#">Page 2</a>
-                                </div>
-                            </div> -->
                         </li>
                         <li class="nav-item">
                             <div class="nav-link-tab">
                                 <a href="#app-section" class="nav-link" target="">
                                     Downloads            
+                                </a>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <div class="nav-link-tab">
+                                <a href="#faces-section" class="nav-link" target="">
+                                    Our Team
                                 </a>
                             </div>
                         </li>
@@ -128,7 +123,8 @@
                 </div>
             </div>
         </nav>
-    </div>    
+    </div>
+
     <!-- HEADER SECTION-->
 
     <header id="header-container" class="container-fluid text-center overlay">        
@@ -145,10 +141,13 @@
             <!-- with 25% height added ('h-25') -->
             <div class="col-md-5 col-sm-12 h-25">
                 <!-- MAIN BACKGROUND IMAGE -->
-                <img class="bkg-img" src="bird.png" alt="Image from freesvg.com">
+                <img class="bkg-img" src="assets/images/thematic/bird.png" alt="Image from freesvg.com">
             </div>
         </div>
     </header>
+
+    <!-- MAIN -->
+
     <main>
 
         <!-- INTRO SECTION -->
@@ -159,21 +158,21 @@
                     <p class="text-left big-margin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eveniet libero asperiores debitis perspiciatis, in beatae ex aspernatur rerum quia qui laudantium nobis recusandae corrupti natus porro laboriosam iusto facere. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eveniet libero asperiores debitis perspiciatis, in beatae ex aspernatur rerum quia qui laudantium nobis recusandae corrupti natus porro laboriosam iusto facere. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eveniet libero asperiores debitis perspiciatis, in beatae ex aspernatur rerum quia qui laudantium nobis recusandae corrupti natus porro laboriosam iusto facere. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque repellendus optio ut aperiam, aliquid debitis perferendis distinctio magnam officia modi! Adipisci suscipit dignissimos, consectetur maiores tempora quisquam totam? Veritatis, voluptatibus.</p>
                 </div>
             </div>
-            <hr>
+            
             <container class="text-center justify-content-center">
                 <div class="row pt-4 pb-4">
                     <div class="col-md-6">
-                        <img class="section-1-img" src="landscape1.jpg" alt="section 1 image 1">
+                        <img class="section-1-img" src="assets/images/backgrounds/landscape1.jpg" alt="section 1 image 1">
                         <div class="panel pt-4 pb-4">
-                            <h1 class="text-center pb-4">Content</h1>
+                            <h1 class="text-center pb-4">Our History</h1>
                             <!-- paragraph with top padding of 4px (') -->
                             <p class="text-left ml-4 mr-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum architecto quia numquam eaque impedit ea quos fugit non, voluptatibus eius! Excepturi reiciendis labore debitis ratione voluptas. Nemo qui hic natus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic quos dolore voluptas. Corrupti, culpa vero unde omnis perferendis voluptatum illum commodi eveniet quis quas minus quae quia officia! Suscipit, magni! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, ea? Nulla neque ipsa facilis molestias quasi. Voluptate eius dolor asperiores suscipit minima sunt vitae doloribus nemo iste, facilis, optio omnis?</p>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <img class="section-1-img" src="landscape2.jpg" alt="section 1 image 2">
+                        <img class="section-1-img" src="assets/images/backgrounds/landscape2.jpg" alt="section 1 image 2">
                         <div class="panel pt-4 pb-4">
-                            <h1 class="text-center pb-4">Content</h1>
+                            <h1 class="text-center pb-4">Our Mission</h1>
                             <!-- paragraph with top padding of 4px (') -->
                             <p class="text-left ml-4 mr-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, ea? Nulla neque ipsa facilis molestias quasi. Voluptate eius dolor asperiores suscipit minima sunt vitae doloribus nemo iste, facilis, optio omnis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint omnis distinctio beatae, voluptatum amet modi. Numquam vel, odio, repellat explicabo placeat nesciunt perferendis quasi deleniti laboriosam quisquam eos dolorum accusamus.</p>
                         </div>
@@ -183,31 +182,25 @@
             </container>
         </section>
 
-        <!-- CARD SECTION -->
+        <!-- SERVICES SECTION -->
 
         <section id="services-section" class="section-2 container-fluid">
+            
             <div class="row pt-4 pb-4">
                 <div class="col-md-12 col-sm-12">
                     <h1 class="text-center">Our Services</h1><br>
-                    <p class="big-margin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eveniet libero asperiores debitis perspiciatis, in beatae ex aspernatur rerum quia qui laudantium nobis recusandae corrupti natus porro laboriosam iusto facere.</p>
+                    <p class="big-margin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium fuga corporis, vitae voluptas necessitatibus blanditiis delectus reiciendis. Fugiat explicabo labore doloremque quas sunt nemo magnam aperiam consequuntur, inventore modi voluptas? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eveniet libero asperiores debitis perspiciatis, in beatae ex aspernatur rerum quia qui laudantium nobis recusandae corrupti natus porro laboriosam iusto facere.</p>
                 </div>
             </div>
-            <div class="container-fluid text-center">
+
+            <div class="container-fluid text-center pt-4 pb-4">
                 
                 <!-- desktop shadow over this section -->
                 <div class="desktop shadow-lg">
                     <!-- addign a flex container with wrapping and centered (d-flex flex-md-row flex-wrap justify-content-center) -->
                     <div class="cards d-flex flex-md-row flex-wrap justify-content-center section-color">
-                        <!-- <div class="card">
-                            <img src="#" alt="card image top" class="card-img-top">
-                            <div class="card-body">
-                                <h3 class="card-title"></h3>
-                                <p class="card-text">services galore</p>
-                                <a href="#" class="btn btn-primary">Go Somewhere</a>
-                            </div>
-                        </div> -->
                         <div class="card">
-                            <img src="satisfaction.png" alt="card image top" class="card-img-top">
+                            <img src="assets/images/ribbons/satisfaction.png" alt="card image top" class="card-img-top">
                             <div class="card-body">
                                 <h3 class="card-title">Satisfaction<br>Guarantee</h3>
                                 <p class="card-text">services galore</p>
@@ -215,7 +208,7 @@
                             </div>
                         </div>
                         <div class="card">
-                            <img src="satisfaction.png" alt="card image top" class="card-img-top">
+                            <img src="assets/images/ribbons/satisfaction.png" alt="card image top" class="card-img-top">
                             <div class="card-body">
                                 <h3 class="card-title">Friendly<br>Staff</h3>
                                 <p class="card-text">services galore</p>
@@ -223,7 +216,7 @@
                             </div>
                         </div>
                         <div class="card">
-                            <img src="satisfaction.png" alt="card image top" class="card-img-top">
+                            <img src="assets/images/ribbons/satisfaction.png" alt="card image top" class="card-img-top">
                             <div class="card-body">
                                 <h3 class="card-title">Great<br>Service</h3>
                                 <p class="card-text">services galore</p>
@@ -233,7 +226,79 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Customer Testimony -->
+
+            <div class="row">
+                <div class="row pt-4 pb-4">
+                    <div class="col-md-12 col-sm-12">
+                        <center>
+                            <h1 class="text-center">What our Customers Say</h1>
+                        </center>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="testimonial">
+                        <blockquote>
+                            <p class="text-left">
+                                <i>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis porro labore voluptatibus impedit voluptates rem quos blanditiis, unde similique totam. Deleniti molestias tempore officia error. Harum modi aliquid odio sunt?</p>
+                                </i><br>
+                            <span class="name">
+                                -Julie
+                            </span>
+                        </blockquote>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="testimonial">
+                        <blockquote>
+                            <p class="text-left">
+                                <i>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis porro labore voluptatibus impedit voluptates rem quos blanditiis, unde similique totam. Deleniti molestias tempore officia error. Harum modi aliquid odio sunt?</p>
+                                </i><br>
+                            <span class="name">
+                                -Julie
+                            </span>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="testimonial">
+                        <blockquote>
+                            <p class="text-left">
+                                <i>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis porro labore voluptatibus impedit voluptates rem quos blanditiis, unde similique totam. Deleniti molestias tempore officia error. Harum modi aliquid odio sunt?</p>
+                                </i><br>
+                            <span class="name">
+                                -Julie
+                            </span>
+                        </blockquote>
+                    </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="testimonial">
+                        <blockquote>
+                            <p class="text-left">
+                                <i>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis porro labore voluptatibus impedit voluptates rem quos blanditiis, unde similique totam. Deleniti molestias tempore officia error. Harum modi aliquid odio sunt?</p>
+                                </i><br>
+                            <span class="name">
+                                -Julie
+                            </span>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <!-- Divider -->
 
         <hr>
 
@@ -293,12 +358,6 @@
             </div>
             <!-- Hero Unit here -->
             <hr>
-            <dpt-iv class="row pt-4 pb-4">
-                <div class="col-md-12 col-sm-12">
-                    <h1>What our Customers Say</h1><br>
-                    <p class="text-left big-margin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam molestiae at obcaecati maxime inventore labore praesentium ipsum, dolore, repellat eius voluptates quas, voluptas assumenda iste? Perferendis, aspernatur! Maxime, itaque quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, eos aut! Modi eaque reprehenderit quasi enim. Eos, rem maxime! Numquam atque illo, quae odio sed autem consequatur libero veritatis architecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque velit quidem, distinctio quisquam reprehenderit quis veniam autem laudantium voluptatem, unde numquam earum minus sunt ab quae dolorum tempore iste ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima tempora placeat cum, eveniet ipsum eligendi ut quasi accusamus ratione ex delectus molestias ab excepturi ipsam optio illum veritatis unde ad.</p>
-                </div>
-            </div>
             <hr>
         </section>
 
@@ -327,24 +386,14 @@
                 </div>
             </div>
         </section>
-        <!-- <section>
-            <div class="container-fluid">
-                <div class="row pt-4 pb-4">
-                    <div class="col-md-6 col-lg-12">
-                        <div class="form">
-                            <label for="name" class="label"></label>
-                            <input class="input" type="text"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
     </main>
 
     <!-- FOOTER -->
     
     <footer>
         <div id="footer-container" class="container-fluid">
+
+            <!-- Conclusion Text -->
             <div id="footer-content-left" class="footer-module row text-left">
                 <div class="col-md-5">
                     <h2 class="text-light">
@@ -354,32 +403,57 @@
                         </p>
                     </h1>
                 </div>
+
+
+                <!-- Contact Form -->
                 <div id="footer-content-center" class="footer-module col-md-5">
                     <h2 class="text-light">Newsletter</h2>
                     <p class="footer-content">Stay Updated!</p><br>
-                    <form action="email-form" class="form-inline">
-                        <div class="col">
-                            <div id="email-form-ig" class="input-group">
-                                <label class="form-control" for="email">Email</label><br>
-                                <input type="text" name="email" placeholder="Email" class="form-control bg-dark text-white" >
-                                <span class="input-group-text">
-                                    <a href="#">
-                                        <i class="fas fa-arrow-right" style="width: fit-content;height: auto;"></i>
-                                    </a>
-                                </span>
-                                <!-- <div class="input-group-prepend">
-                                </div> -->
+                    <form action="email-form" class="form" role="form">
+                        <div class="row">
+                            <div class="col-md-6">
+
+                                <!-- Name -->
+                                <div class="form-group">
+                                    <label class="form-control" for="name">Name</label>
+                                    <input id="name" type="text" name="name" onfocus="this.value=''" placeholder="(Required) Your Name" class="form-control bg-dark text-white" required> 
+                                </div>
+        
+                                <!-- Email -->
+                                <div class="form-group">
+                                    <label class="form-control" for="email">Email</label>
+                                    <input id="email" type="text" name="email" onfocus="this.value=''" placeholder="(Required) Your Email" class="form-control bg-dark text-white" required>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!-- Message -->
+                                <div class="form-group">
+                                    <textarea id="message" class="form-control" name="message" id="message-area" onfocus="this.value=''" cols="30" rows="5" placeholder="(Optional) Leave a Message..."></textarea>
+                                </div>
+        
+                                <!-- Arrow -->
+                                <div class="form-group">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-arrow-right"></i>
+                                        <input type="submit" id="form-button" class="btn btn-default" href="#" onclick="formSubmit()">
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </form>
                 </div>
+
+                <!-- Social -->
                 <div id="footer-content-right" class="footer-module col-md-2">
                     <h2 id="follow" class="text-light">Follow Us!</h2>
                     <p class=""></p>
                     <div class="footer-content column">
                         <a href="#">
                             <i class="fab fa-facebook-f fa-2x"></i>
-                        </a>x
+                        </a>
                         <a href="#">
                             <i class="fab fa-instagram fa-2x ml-2"></i>
                         </a>
@@ -414,16 +488,17 @@
     alert("You have clicked the button");
 </script> -->
 
-<!-- DROPDOWN MENU SCRIPT -->
+<!-- Form Submission Script -->
 
 <script type="text/javascript" id="dropdown()">
-    function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-} 
+    
+    // formSubmit()
+
+    function formSubmit() {
+        
+        document.email-form.submit();
+        document.email-form.reset();
+    
+    }
 </script>
 </html>
