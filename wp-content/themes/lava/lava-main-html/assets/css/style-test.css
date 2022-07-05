@@ -303,6 +303,11 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
+/* .nav-item {
+    display: block;
+    height:11vh;
+} */
+
 .nav-link {
     font-size: 22px;
     
@@ -427,7 +432,10 @@ input[type=text] {
     animation-fill-mode: forwards;
 }
 
+/* NEEDS TO BE ADJUSTED */
+
 .nav-item:hover {
+    height: 11vh;
     background-color: black;
 }
 
