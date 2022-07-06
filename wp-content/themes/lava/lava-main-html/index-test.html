@@ -53,10 +53,12 @@
     <!-- I also want to add click animation for links when user clicks a link -->
 
     <div id="navigation" class="container-fluid p-0 desktop shadow-md">
+        
         <nav class="navbar navbar-expand-lg section-color">
+            
             <div class="container-fluid">
                 
-                <a class="navbar-brand limelight-font" style="color:orange;" href="#"><h1><i>Lava</i></h1></a>
+                <a class="navbar-brand limelight-font" href="#"><h1><i>Lava</i></h1></a>
                 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
                     aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
@@ -383,20 +385,32 @@
 
                     <div class="col-md-4">
                         <div id="face1" class="img-col desktop shadow-md">
+                            
+                            <!-- STOPGAP -->
+                            <img src="face1.jpg" alt="Image from Unsplash" height="400" width="300">
+                        
                         </div>
                     </div>
-
+                    
                     <!-- Face 2 -->
-
+                    
                     <div class="col-md-4">
                         <div id="face2" class="img-col desktop shadow-md">
+                            
+                            <!-- STOPGAP -->
+                            <img src="face2.jpg" alt="Image from Unsplash" height="400" width="300">
+                        
                         </div>
                     </div>
-
+                    
                     <!-- Face 3 -->
-
+                    
                     <div class="col-md-4">
                         <div id="face3" class="img-col desktop shadow-md">
+                        
+                            <!-- STOPGAP -->
+                            <img src="face3.jpg" alt="Image from Unsplash" height="400" width="300">
+                        
                         </div>
                     </div>
                 </div>
@@ -408,106 +422,105 @@
     
     <footer>
         <div id="footer-container" class="container-fluid">
-
-            <!-- Conclusion Text -->
-            <div id="footer-content-left" class="footer-module row text-left">
-                <div class="col-md-5">
-                    <h2 class="text-light">
-                        <h2>We're Here to Help</h1><br>
-                        <p class="footer-content">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim aspernatur quasi distinctio consectetur consequuntur voluptate possimus eveniet veritatis commodi a perspiciatis harum cum animi quia reiciendis sapiente ad, soluta natus.
-                        </p>
-                    </h1>
-                </div>
-
-
-                <!-- Contact Form -->
-                <div id="footer-content-center" class="footer-module col-md-5">
-                    
-                    <h2 class="text-light">Newsletter</h2>
-                    <p class="footer-content">Stay Updated!</p><br>
-                    
-                    <form action="email-form" class="form" role="form">
-                        
-                        <div class="row">
-                            <div class="col-md-6">
-
-                                <!-- Name -->
-                                <div class="form-group">
-                                    <label class="form-control" for="name">Name</label>
-                                    <input id="name" type="text" name="name" onfocus="this.value=''" placeholder="(Required) Your Name" class="form-control bg-dark text-white" required> 
-                                </div>
-        
-                                <!-- Email -->
-                                <div class="form-group">
-                                    <label class="form-control" for="email">Email</label>
-                                    <input id="email" type="text" name="email" onfocus="this.value=''" placeholder="(Required) Your Email" class="form-control bg-dark text-white" required>
-                                </div>
-                            </div>
-                            
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-6">
-
-                                <!-- Message -->
-                                <div class="form-group">
-                                    <textarea id="message" class="form-control" name="message" id="message-area" onfocus="this.value=''" cols="30" rows="5" placeholder="(Optional) Leave a Message..."></textarea>
-                                </div>
-        
-                                <!-- Arrow -->
-                                <div class="form-group">
-                                    <span class="input-group-text">
-                                        <i class="fas fa-arrow-right"></i>
-                                        <input type="submit" id="form-button" class="btn btn-default" href="#" onclick="formSubmit()">
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-
-                <!-- Social -->
-                <div id="footer-content-right" class="footer-module col-md-2">
-            
-                    <h2 id="follow" class="text-light">Follow Us!</h2>
-            
-                    <div class="footer-content column">
-            
-                        <a href="#">
-            
-                            <i class="fab fa-facebook-f fa-2x"></i>
-            
-                        </a>
-            
-                        <a href="#">
-            
-                            <i class="fab fa-instagram fa-2x ml-2"></i>
-            
-                        </a>
-            
-                        <a href="#">
-            
-                            <i class="fab fa-twitter fa-2x ml-2"></i>
-            
-                        </a>
-            
-                        <a href="#">
-            
-                            <i class="fab fa-youtube fa-2x ml-2"></i>
-            
-                        </a>
+            <div class="row pt-4 pb-4">
+                <!-- Conclusion Text -->
+                <div id="footer-content-left" class="footer-module row text-left">
+                    <div class="col-md-5">
+                        <h2 class="text-light">
+                            <h2 class="text-left ml-4">We're Here to Help</h1><br>
+                            <p class="footer-content ml-4 mr-auto">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim aspernatur quasi distinctio consectetur consequuntur voluptate possimus eveniet veritatis commodi a perspiciatis harum cum animi quia reiciendis sapiente ad, soluta natus.
+                            </p>
+                        </h1>
                     </div>
-                </div>
-            </div>
+    
+    
+                    <!-- Contact Form -->
+                    <div id="footer-content-center" class="footer-module col-md-5">
+                        
+                        <h2 class="text-light">Newsletter</h2>
+                        <p class="footer-content">Stay Updated!</p><br>
+                        
+                        <form action="email-form" class="form" role="form">
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+    
+                                    <!-- Name -->
+                                    <div class="form-group">
+                                        <label class="form-control" for="name">Name</label>
+                                        <input id="name" type="text" name="name" onfocus="this.value=''" placeholder="(Required) Your Name" class="form-control bg-dark text-white" required> 
+                                    </div>
+            
+                                    <!-- Email -->
+                                    <div class="form-group">
+                                        <label class="form-control" for="email">Email</label>
+                                        <input id="email" type="text" name="email" onfocus="this.value=''" placeholder="(Required) Your Email" class="form-control bg-dark text-white" required>
+                                    </div>
+                                </div>
+                                
+                            </div>
+    
+                            <div class="row">
+                                <div class="col-md-6">
+    
+                                    <!-- Message -->
+                                    <div class="form-group">
+                                        <textarea id="message" class="form-control" name="message" id="message-area" onfocus="this.value=''" cols="30" rows="5" placeholder="(Optional) Leave a Message..."></textarea>
+                                    </div>
+            
+                                    <!-- Arrow -->
+                                    <div class="form-group">
+                                        <span class="input-group-text">
+                                            <i class="fas fa-arrow-right"></i>
+                                            <input type="submit" id="form-button" class="btn btn-default" href="#" onclick="formSubmit()">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+    
+                    <!-- Social -->
+                    <div id="footer-content-right" class="footer-module col-md-2">
+                
+                        <h2 id="follow" class="text-light">Follow Us!</h2>
+                
+                        <div class="footer-content column">
+                
+                            <a href="#">
+                
+                                <i class="fab fa-facebook-f fa-2x"></i>
+                
+                            </a>
+                
+                            <a href="#">
+                
+                                <i class="fab fa-instagram fa-2x ml-2"></i>
+                
+                            </a>
+                
+                            <a href="#">
+                
+                                <i class="fab fa-twitter fa-2x ml-2"></i>
+                
+                            </a>
+                
+                            <a href="#">
+                
+                                <i class="fab fa-youtube fa-2x ml-2"></i>
+                
+                            </a>
+                        </div>
+                    </div>
 
-            <div id="copyright" class="row pt-4 pb-4">
-            
-                <p class="text-center">
-            
-                    <h6>&copy;2022 | This page was made by <span>Cinderblock Labs</span></h6>    
-            
-                </p> 
+                    <!-- WONT FLOAT RIGHT -->
+                    <p id="footer-copyright" class="text-center">
+                
+                        <h6>&copy;2022 | This page was made by <span>Cinderblock Labs</span></h6>    
+                
+                    </p> 
+                </div>
             </div>
         </div>
     </footer>
