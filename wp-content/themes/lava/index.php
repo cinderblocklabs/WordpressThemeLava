@@ -2,14 +2,14 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Title -->
-    <title>LAVA</title>
-
+    <head>
+        <!-- Title -->
+        <title>LAVA</title>
+        
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    
     <!-- Optional Meta Tags -->
     <meta name="author" content="Cinderblock Labs">
 
@@ -24,23 +24,17 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
     <!-- FontAwesome -->
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    
     <!-- Custom CSS Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="style-test.css" media="screen">
-
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    
     <!-- FONTS -->
-
+    
     <!-- Pinyon Script -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Pinyon+Script&display=swap" rel="stylesheet">   
     
-    <!-- Raleway Light 300
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> -->
-
     <!-- Righteous -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,41 +44,46 @@
 
 <body>
     
-    <!-- NAVBAR -->
-    
+    <!-- -------------------------------
+        ------------------------------- -->
+        
+        <!-- NAVBAR -->
+        
     <!-- container with no padding (p-0) -->
-
+    
     <!-- Need to Fix Dropdown menu and add targets to each of the links -->
     <!-- I also want to add click animation for links when user clicks a link -->
-
+    
     <div id="navigation" class="container-fluid p-0 desktop shadow-md">
+        
         <nav class="navbar navbar-expand-lg section-color">
+            
             <div class="container-fluid">
                 
-                <a class="navbar-brand limelight-font" style="color:orange;" href="#"><h1><i>Lava</i></h1></a>
+                <a class="navbar-brand limelight-font" href="#"><h1><i>Lava</i></h1></a>
                 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
-                    aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse">
+                <!-- div mr-auto ('margin-right auto') -->
+                <div class="mr-auto"></div>
                 
-                <div class="collapse navbar-collapse">
-                    <!-- div mr-auto ('margin-right auto') -->
-                    <div class="mr-auto"></div>
-
                     <!-- NAV ITEMS + LINKS -->
-
+                    
                     <ul id="nav-items" class="navbar-nav">
                         <li class="nav-item">
                             <div class="nav-link-tab">
                                 <a href="#intro-section" class="nav-link" target="">
-                                About Us
+                                    About Us
                                 </a>
                             </div>
                         </li>
                         
                         <!-- DROPDOWN MENU SECTION -->
-
+                        
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Services
@@ -92,7 +91,7 @@
                             <div id="dropdown-menu" class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#services-section">Action</a>
                                 <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
+                                <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Something else here</a>
                             </div>
                         </li>
@@ -111,7 +110,7 @@
                                 </a>
                             </div>
                         </li>
-
+                        
                         <li class="nav-item">
                             <div class="nav-link-tab">
                                 <a href="#footer-container" class="nav-link" target="">
@@ -124,10 +123,17 @@
             </div>
         </nav>
     </div>
-
+    
     <!-- HEADER SECTION-->
-
+    
     <header id="header-container" class="container-fluid text-center overlay">        
+        <!-- Backrgound Video -->
+
+        <!-- COMMENTED OUT FOR NOW -->
+    
+        <!-- <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+            <source src="https://assets.codepen.io/6093409/river.mp4" type="video/mp4">
+        </video> -->
         <div id="header-intro" class="row pt-4 pb-4">
             <div class="col-md-7 col-sm-12 ">
                 <div class="title-section">
@@ -196,7 +202,7 @@
             <div class="container-fluid text-center pt-4 pb-4">
                 
                 <!-- desktop shadow over this section -->
-                <div class="desktop shadow-lg">
+                <div class="desktop shadow-md">
                     <!-- addign a flex container with wrapping and centered (d-flex flex-md-row flex-wrap justify-content-center) -->
                     <div class="cards d-flex flex-md-row flex-wrap justify-content-center section-color">
                         <div class="card">
@@ -229,73 +235,76 @@
 
             <!-- Customer Testimony -->
 
-            <div class="row">
-                <div class="row pt-4 pb-4">
-                    <div class="col-md-12 col-sm-12">
-                        <center>
-                            <h1 class="text-center">What our Customers Say</h1>
-                        </center>
+            <div class="row pt-4 pb-4">
+                <div class="col-md-12">
+                    <!-- WILL NOT CENTER!!! -->
+                    <center>
+                        <h1 class="text-center ml-10">What our Customers Say</h1><br>
+                    </center>
+                </div>
+            </div>
+
+            <div id="testimonials" class="container-fluid text-center pt-4 pb-4">
+    
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="testimonial flex-wrap justify-content-center">
+                            <blockquote>
+                                <p class="text-left big-margin">
+                                    <i>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis porro labore voluptatibus impedit voluptates rem quos blanditiis, unde similique totam. Deleniti molestias tempore officia error. Harum modi aliquid odio sunt?</p>
+                                    </i><br>
+                                <span class="name">
+                                    -Julie
+                                </span>
+                            </blockquote>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="testimonial big-margin">
+                            <blockquote>
+                                <p class="text-left">
+                                    <i>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis porro labore voluptatibus impedit voluptates rem quos blanditiis, unde similique totam. Deleniti molestias tempore officia error. Harum modi aliquid odio sunt?</p>
+                                    </i><br>
+                                <span class="name">
+                                    -Brock
+                                </span>
+                            </blockquote>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-3">
+                        <div class="testimonial">
+                            <blockquote>
+                                <p class="text-left big-margin">
+                                    <i>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis porro labore voluptatibus impedit voluptates rem quos blanditiis, unde similique totam. Deleniti molestias tempore officia error. Harum modi aliquid odio sunt?</p>
+                                    </i><br>
+                                <span class="name">
+                                    -Sarah
+                                </span>
+                            </blockquote>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="testimonial">
+                            <blockquote>
+                                <p class="text-left big-margin">
+                                    <i>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis porro labore voluptatibus impedit voluptates rem quos blanditiis, unde similique totam. Deleniti molestias tempore officia error. Harum modi aliquid odio sunt?</p>
+                                    </i><br>
+                                <span class="name">
+                                    -Joel
+                                </span>
+                            </blockquote>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="testimonial">
-                        <blockquote>
-                            <p class="text-left">
-                                <i>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis porro labore voluptatibus impedit voluptates rem quos blanditiis, unde similique totam. Deleniti molestias tempore officia error. Harum modi aliquid odio sunt?</p>
-                                </i><br>
-                            <span class="name">
-                                -Julie
-                            </span>
-                        </blockquote>
-                    </div>
-                </div>
-                
-                <div class="col-md-3">
-                    <div class="testimonial">
-                        <blockquote>
-                            <p class="text-left">
-                                <i>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis porro labore voluptatibus impedit voluptates rem quos blanditiis, unde similique totam. Deleniti molestias tempore officia error. Harum modi aliquid odio sunt?</p>
-                                </i><br>
-                            <span class="name">
-                                -Julie
-                            </span>
-                        </blockquote>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="testimonial">
-                        <blockquote>
-                            <p class="text-left">
-                                <i>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis porro labore voluptatibus impedit voluptates rem quos blanditiis, unde similique totam. Deleniti molestias tempore officia error. Harum modi aliquid odio sunt?</p>
-                                </i><br>
-                            <span class="name">
-                                -Julie
-                            </span>
-                        </blockquote>
-                    </div>
-                </div>
-                
-                <div class="col-md-3">
-                    <div class="testimonial">
-                        <blockquote>
-                            <p class="text-left">
-                                <i>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis porro labore voluptatibus impedit voluptates rem quos blanditiis, unde similique totam. Deleniti molestias tempore officia error. Harum modi aliquid odio sunt?</p>
-                                </i><br>
-                            <span class="name">
-                                -Julie
-                            </span>
-                        </blockquote>
-                    </div>
-                </div>
-            </div>
         </section>
 
         <!-- Divider -->
@@ -314,7 +323,7 @@
             <!-- Platform row -->
             <div id="app-icon-row" class="row platform pt-4 pb-4">
                 <div class="col-md-6 col-sm-12 text-right">
-                    <div class="desktop shadow-lg">
+                    <div class="desktop shadow-sm">
                         <div class="d-flex flex-row flex-wrap justify-content-center pt-4 pb-4 platform-content">
                             <!-- Desktop icon that is 3x larger than normal (fa-3x) --> 
                             <div class="text text-left">
@@ -336,7 +345,7 @@
                 </div>
                 <div class="col-md-6 col-sm-12 text-left">
                     <!-- Subtle shadow effect over this section of the page -->
-                    <div class="desktop shadow-lg">
+                    <div class="desktop shadow-sm">
                         <div class="d-flex flex-row flex-wrap justify-content-center pt-4 pb-4">
                             <!-- Desktop icon that is 3x larger than normal (fa-3x) -->
                             <div class="text text-left">
@@ -356,31 +365,71 @@
                     </div>
                 </div>
             </div>
-            <!-- Hero Unit here -->
-            <hr>
-            <hr>
         </section>
-
-        <!-- FACES SECTION -->
         
+        <!-- Divider -->
+        <hr>
+        
+        <!-- FACES SECTION -->
+
         <section id="faces-section" class="section-4">
+            
+            <!-- Title -->
+
             <div class="row pt-4 pb-4">
                 <div class="col-md-12 col-sm-12">
                     <h1 class="text-center">Our Team</h1><br>
                 </div>
             </div>
+
+            <!-- Face Images -->
+
             <div class="container text-center flex-wrap">
-                <div class="row team-row">
+                
+                <div class="row team-row pt-4 pb-4">
+                
+                    <!-- Face 1 -->
+
                     <div class="col-md-4">
                         <div id="face1" class="img-col desktop shadow-md">
+                            
+                            <!-- STOPGAP -->
+                            <img src="face1.jpg" alt="Image from Unsplash" height="400" width="300">
+                            <div class="description pt-2 pb-2">
+                                <h3 class="text-center pt-2 pb-2">Jake</h3>
+                                <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti est doloribus quis, doloremque dolorem dicta provident repudiandae veniam at reiciendis eum officia consectetur fugiat harum rem exercitationem labore. Ipsam, facilis!</p>
+                            </div>
                         </div>
                     </div>
+                    
+                    <!-- Face 2 -->
+                    
                     <div class="col-md-4">
                         <div id="face2" class="img-col desktop shadow-md">
+                            
+                            <!-- STOPGAP -->
+                            <img src="face2.jpg" alt="Image from Unsplash" height="400" width="300">
+                            <div class="description pt-2 pb-2">
+                                <h3 class="text-center pt-2 pb-2">Madison</h3>
+                                <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti est doloribus quis, doloremque dolorem dicta provident repudiandae veniam at reiciendis eum officia consectetur fugiat harum rem exercitationem labore. Ipsam, facilis!</p>
+                            </div>
+                        
                         </div>
                     </div>
+                    
+                    <!-- Face 3 -->
+                    
                     <div class="col-md-4">
                         <div id="face3" class="img-col desktop shadow-md">
+                        
+                            <!-- STOPGAP -->
+                            <img src="face3.jpg" alt="Image from Unsplash" height="400" width="300">
+
+                            <div class="description pt-2 pb-2">
+                                <h3 class="text-center pt-2 pb-2">Olivia</h3>
+                                <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti est doloribus quis, doloremque dolorem dicta provident repudiandae veniam at reiciendis eum officia consectetur fugiat harum rem exercitationem labore. Ipsam, facilis!</p>
+                            </div>
+                        
                         </div>
                     </div>
                 </div>
@@ -392,84 +441,104 @@
     
     <footer>
         <div id="footer-container" class="container-fluid">
-
-            <!-- Conclusion Text -->
-            <div id="footer-content-left" class="footer-module row text-left">
-                <div class="col-md-5">
-                    <h2 class="text-light">
-                        <h2>We're Here to Help</h1><br>
-                        <p class="footer-content">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim aspernatur quasi distinctio consectetur consequuntur voluptate possimus eveniet veritatis commodi a perspiciatis harum cum animi quia reiciendis sapiente ad, soluta natus.
-                        </p>
-                    </h1>
-                </div>
-
-
-                <!-- Contact Form -->
-                <div id="footer-content-center" class="footer-module col-md-5">
-                    <h2 class="text-light">Newsletter</h2>
-                    <p class="footer-content">Stay Updated!</p><br>
-                    <form action="email-form" class="form" role="form">
-                        <div class="row">
-                            <div class="col-md-6">
-
-                                <!-- Name -->
-                                <div class="form-group">
-                                    <label class="form-control" for="name">Name</label>
-                                    <input id="name" type="text" name="name" onfocus="this.value=''" placeholder="(Required) Your Name" class="form-control bg-dark text-white" required> 
-                                </div>
-        
-                                <!-- Email -->
-                                <div class="form-group">
-                                    <label class="form-control" for="email">Email</label>
-                                    <input id="email" type="text" name="email" onfocus="this.value=''" placeholder="(Required) Your Email" class="form-control bg-dark text-white" required>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <!-- Message -->
-                                <div class="form-group">
-                                    <textarea id="message" class="form-control" name="message" id="message-area" onfocus="this.value=''" cols="30" rows="5" placeholder="(Optional) Leave a Message..."></textarea>
-                                </div>
-        
-                                <!-- Arrow -->
-                                <div class="form-group">
-                                    <span class="input-group-text">
-                                        <i class="fas fa-arrow-right"></i>
-                                        <input type="submit" id="form-button" class="btn btn-default" href="#" onclick="formSubmit()">
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-
-                <!-- Social -->
-                <div id="footer-content-right" class="footer-module col-md-2">
-                    <h2 id="follow" class="text-light">Follow Us!</h2>
-                    <p class=""></p>
-                    <div class="footer-content column">
-                        <a href="#">
-                            <i class="fab fa-facebook-f fa-2x"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-instagram fa-2x ml-2"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-twitter fa-2x ml-2"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-youtube fa-2x ml-2"></i>
-                        </a>
+            <div class="row pt-4 pb-4">
+                <!-- Conclusion Text -->
+                <div id="footer-content-left" class="footer-module row text-left">
+                    <div class="col-md-5">
+                        <h2 class="text-light">
+                            <h2 class="text-left ml-4">We're Here to Help</h1><br>
+                            <p class="footer-content ml-4 mr-auto">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim aspernatur quasi distinctio consectetur consequuntur voluptate possimus eveniet veritatis commodi a perspiciatis harum cum animi quia reiciendis sapiente ad, soluta natus.
+                            </p>
+                        </h1>
                     </div>
+    
+    
+                    <!-- Contact Form -->
+                    <div id="footer-content-center" class="footer-module col-md-5">
+
+                        <h2 class="text-light">Contact Us</h2><br>
+                        <p>If you have a question, do not hesitate. We will anser ASAP!</p><br>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                    <form action="email-form" class="form" role="form">
+    
+                                    <!-- Name -->
+                                    <div class="form-group">
+                                        <label class="form-control" for="name">Name</label>
+                                        <input id="name" type="text" name="name" onfocus="this.value=''" placeholder="(Required) Your Name" class="form-control bg-dark text-white" required> 
+                                    </div>
+            
+                                    <!-- Email -->
+                                    <div class="form-group">
+                                        <label class="form-control" for="email">Email</label>
+                                        <input id="email" type="text" name="email" onfocus="this.value=''" placeholder="(Required) Your Email" class="form-control bg-dark text-white" required>
+                                    </div>
+                                </div>
+                                
+                            </div>
+    
+                            <div class="row">
+                                <div class="col-md-6">
+    
+                                    <!-- Message -->
+                                    <div class="form-group">
+                                        <textarea id="message" class="form-control" name="message" id="message-area" onfocus="this.value=''" cols="30" rows="5" placeholder="(Optional) Leave a Message..."></textarea>
+                                    </div>
+            
+                                    <!-- Arrow -->
+                                    <div class="form-group">
+                                        <span class="input-group-text">
+                                            <i class="fas fa-arrow-right"></i>
+                                            <input type="submit" id="form-button" class="btn btn-default" href="#" onclick="formSubmit()">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+    
+                    <!-- Social -->
+                    <div id="footer-content-right" class="footer-module col-md-2">
+                
+                        <h2 class="text-light">Follow Us!</h2>
+                
+                        <div class="footer-content column">
+                
+                            <a href="#">
+                
+                                <i class="fab fa-facebook-f fa-2x"></i>
+                
+                            </a>
+                
+                            <a href="#">
+                
+                                <i class="fab fa-instagram fa-2x ml-2"></i>
+                
+                            </a>
+                
+                            <a href="#">
+                
+                                <i class="fab fa-twitter fa-2x ml-2"></i>
+                
+                            </a>
+                
+                            <a href="#">
+                
+                                <i class="fab fa-youtube fa-2x ml-2"></i>
+                
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- WONT FLOAT RIGHT -->
+                    <p id="footer-copyright" class="text-center ml-4 mr-4">
+                
+                        <h6>&copy;2022 | This page was made by <span>Cinderblock Labs</span></h6>    
+                
+                    </p> 
                 </div>
-            </div>
-            <div id="copyright" class="row pt-4 pb-4">
-                <p class="text-center">
-                    <h6>&copy;2022 | This page was made by <span>Cinderblock Labs</span></h6>    
-                </p> 
             </div>
         </div>
     </footer>
