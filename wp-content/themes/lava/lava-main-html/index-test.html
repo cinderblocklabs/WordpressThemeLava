@@ -45,13 +45,16 @@
 
 <body>
     
-    <!-- NAVBAR -->
-    
+    <!-- -------------------------------
+        ------------------------------- -->
+        
+        <!-- NAVBAR -->
+        
     <!-- container with no padding (p-0) -->
-
+    
     <!-- Need to Fix Dropdown menu and add targets to each of the links -->
     <!-- I also want to add click animation for links when user clicks a link -->
-
+    
     <div id="navigation" class="container-fluid p-0 desktop shadow-md">
         
         <nav class="navbar navbar-expand-lg section-color">
@@ -61,16 +64,16 @@
                 <a class="navbar-brand limelight-font" href="#"><h1><i>Lava</i></h1></a>
                 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
-                    aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse">
+                <!-- div mr-auto ('margin-right auto') -->
+                <div class="mr-auto"></div>
                 
-                <div class="collapse navbar-collapse">
-                    <!-- div mr-auto ('margin-right auto') -->
-                    <div class="mr-auto"></div>
-
                     <!-- NAV ITEMS + LINKS -->
-
+                    
                     <ul id="nav-items" class="navbar-nav">
                         <li class="nav-item">
                             <div class="nav-link-tab">
@@ -81,7 +84,7 @@
                         </li>
                         
                         <!-- DROPDOWN MENU SECTION -->
-
+                        
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Services
@@ -89,7 +92,7 @@
                             <div id="dropdown-menu" class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#services-section">Action</a>
                                 <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
+                                <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Something else here</a>
                             </div>
                         </li>
@@ -108,7 +111,7 @@
                                 </a>
                             </div>
                         </li>
-
+                        
                         <li class="nav-item">
                             <div class="nav-link-tab">
                                 <a href="#footer-container" class="nav-link" target="">
@@ -121,10 +124,15 @@
             </div>
         </nav>
     </div>
-
+    
     <!-- HEADER SECTION-->
-
+    
     <header id="header-container" class="container-fluid text-center overlay">        
+        <!-- Backrgound Video -->
+    
+        <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+            <source src="https://assets.codepen.io/6093409/river.mp4" type="video/mp4">
+        </video>
         <div id="header-intro" class="row pt-4 pb-4">
             <div class="col-md-7 col-sm-12 ">
                 <div class="title-section">
@@ -222,22 +230,20 @@
                         </div>
                     </div>
                 </div>
-
             </div>
 
             <!-- Customer Testimony -->
 
-            <div id="testimonials" class="container-fluid text-center pt-4 pb-4">
-                <div class="row">
-                    <div class="row pt-4 pb-4">
-                        <div class="col-md-12 col-sm-12 flex-row justify-content-center">
-                            <!-- WILL NOT CENTER!!! -->
-                            <center>
-                                <h1 class="text-center">What our Customers Say</h1>
-                            </center>
-                        </div>
-                    </div>
+            <div class="row pt-4 pb-4">
+                <div class="col-md-12">
+                    <!-- WILL NOT CENTER!!! -->
+                    <center>
+                        <h1 class="text-center ml-10">What our Customers Say</h1><br>
+                    </center>
                 </div>
+            </div>
+
+            <div id="testimonials" class="container-fluid text-center pt-4 pb-4">
     
                 <div class="row">
                     <div class="col-md-3">
