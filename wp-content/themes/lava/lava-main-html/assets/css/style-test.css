@@ -225,7 +225,7 @@ footer {
     /* font-weight: bold; */
     width: 100%;
     height: 100vh;
-    margin-top: -50vh;
+    margin-top: -58vh;
     bottom: 0;  
     clear:both;
     /* transform: translateY(50vh);   */
@@ -238,7 +238,7 @@ footer p {
 }
 
 #footer-container {
-    max-height: 80vh;
+    height: 80vh;
 }
 
 #footer-copyright {
