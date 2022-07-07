@@ -28,7 +28,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         
         <!-- Custom CSS Stylesheet -->
-        <link rel="stylesheet" type="text/css" href="wp-content/themes/lava/style.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen" integrity="">
         
         <!-- FONTS -->
         
@@ -48,14 +48,14 @@
         <!-- -------------------------------
             ------------------------------- -->
             
-            <!-- NAVBAR -->
+        <!-- NAVBAR -->
             
         <!-- container with no padding (p-0) -->
         
         <!-- Need to Fix Dropdown menu and add targets to each of the links -->
         <!-- I also want to add click animation for links when user clicks a link -->
         
-        <div id="navigation" class="container-fluid p-0 desktop shadow-md">
+        <div id="navigation" class="container-fluid p-0 desktop shadow-lg">
             
             <nav class="navbar navbar-expand-lg section-color">
                 
@@ -127,7 +127,8 @@
         
         <!-- HEADER SECTION-->
         
-        <header id="header-container" class="container-fluid text-center overlay">        
+        <header id="header-container" class="container-fluid text-center overlay">
+                    
             <!-- Backrgound Video -->
 
             <!-- COMMENTED OUT FOR NOW -->
@@ -135,7 +136,8 @@
             <!-- <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
                 <source src="https://assets.codepen.io/6093409/river.mp4" type="video/mp4">
             </video> -->
-            <div id="header-intro" class="row pt-4 pb-4">
+
+            <div id="header-intro" class="row pt-5 pb-5">
                 <div class="col-md-7 col-sm-12 ">
                     <div class="title-section">
                         <h1 class="limelight-font"><b>The Lava Theme</b></h1>
@@ -143,12 +145,12 @@
                     </div>
                     <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eveniet debitis commodi ab illum numquam libero est ea, neque, odio eos? Unde asperiores nisi nostrum impedit magni ipsam amet quos.</p>
                     <!-- button with padding of 5px in x and 2px in y directions ('px-5 py-2') -->
-                    <button id="header-button" class="btn px-5 py-2 orange-bkg" onclick="testButtonAction()">Click Here For More</button>
+                    <button id="header-button" class="btn px-5 py-2" onclick="testButtonAction()">Click Here For More</button>
                 </div>
                 <!-- with 25% height added ('h-25') -->
                 <div class="col-md-5 col-sm-12 h-25">
                     <!-- MAIN BACKGROUND IMAGE -->
-                    <img class="bkg-img" src="assets/images/thematic/bird.png" alt="Image from freesvg.com">
+                    <img class="bkg-img" src="bird.png" alt="Image from freesvg.com">
                 </div>
             </div>
         </header>
@@ -159,7 +161,7 @@
 
             <!-- INTRO SECTION -->
             <section id="intro-section" class="container-fluid">
-                <div class="row pt-4 pb-4">
+                <div class="row pt-5 pb-5">
                     <div class="col-md-12 col-sm-12">
                         <h1 class="text-center">About Us</h1><br>
                         <p class="text-left big-margin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eveniet libero asperiores debitis perspiciatis, in beatae ex aspernatur rerum quia qui laudantium nobis recusandae corrupti natus porro laboriosam iusto facere. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eveniet libero asperiores debitis perspiciatis, in beatae ex aspernatur rerum quia qui laudantium nobis recusandae corrupti natus porro laboriosam iusto facere. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eveniet libero asperiores debitis perspiciatis, in beatae ex aspernatur rerum quia qui laudantium nobis recusandae corrupti natus porro laboriosam iusto facere. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque repellendus optio ut aperiam, aliquid debitis perferendis distinctio magnam officia modi! Adipisci suscipit dignissimos, consectetur maiores tempora quisquam totam? Veritatis, voluptatibus.</p>
@@ -167,18 +169,18 @@
                 </div>
                 
                 <container class="text-center justify-content-center">
-                    <div class="row pt-4 pb-4">
+                    <div class="row pt-5 pb-5">
                         <div class="col-md-6">
-                            <img class="section-1-img" src="assets/images/backgrounds/landscape1.jpg" alt="section 1 image 1">
-                            <div class="panel pt-4 pb-4">
+                            <img class="section-1-img" src="landscape1.jpg" alt="section 1 image 1">
+                            <div class="panel pt-5 pb-5">
                                 <h1 class="text-center pb-4">Our History</h1>
                                 <!-- paragraph with top padding of 4px (') -->
                                 <p class="text-left ml-4 mr-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum architecto quia numquam eaque impedit ea quos fugit non, voluptatibus eius! Excepturi reiciendis labore debitis ratione voluptas. Nemo qui hic natus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic quos dolore voluptas. Corrupti, culpa vero unde omnis perferendis voluptatum illum commodi eveniet quis quas minus quae quia officia! Suscipit, magni! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, ea? Nulla neque ipsa facilis molestias quasi. Voluptate eius dolor asperiores suscipit minima sunt vitae doloribus nemo iste, facilis, optio omnis?</p>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <img class="section-1-img" src="assets/images/backgrounds/landscape2.jpg" alt="section 1 image 2">
-                            <div class="panel pt-4 pb-4">
+                            <img class="section-1-img" src="landscape2.jpg" alt="section 1 image 2">
+                            <div class="panel pt-5 pb-5">
                                 <h1 class="text-center pb-4">Our Mission</h1>
                                 <!-- paragraph with top padding of 4px (') -->
                                 <p class="text-left ml-4 mr-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, ea? Nulla neque ipsa facilis molestias quasi. Voluptate eius dolor asperiores suscipit minima sunt vitae doloribus nemo iste, facilis, optio omnis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint omnis distinctio beatae, voluptatum amet modi. Numquam vel, odio, repellat explicabo placeat nesciunt perferendis quasi deleniti laboriosam quisquam eos dolorum accusamus.</p>
@@ -193,41 +195,41 @@
 
             <section id="services-section" class="section-2 container-fluid">
                 
-                <div class="row pt-4 pb-4">
+                <div class="row pt-5 pb-5">
                     <div class="col-md-12 col-sm-12">
                         <h1 class="text-center">Our Services</h1><br>
                         <p class="big-margin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium fuga corporis, vitae voluptas necessitatibus blanditiis delectus reiciendis. Fugiat explicabo labore doloremque quas sunt nemo magnam aperiam consequuntur, inventore modi voluptas? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eveniet libero asperiores debitis perspiciatis, in beatae ex aspernatur rerum quia qui laudantium nobis recusandae corrupti natus porro laboriosam iusto facere.</p>
                     </div>
                 </div>
 
-                <div class="container-fluid text-center pt-4 pb-4">
+                <div class="container-fluid text-center pt-5 pb-5">
                     
                     <!-- desktop shadow over this section -->
-                    <div class="desktop shadow-md">
+                    <div class="desktop shadow-lg pt-5 pb-5">
                         <!-- addign a flex container with wrapping and centered (d-flex flex-md-row flex-wrap justify-content-center) -->
-                        <div class="cards d-flex flex-md-row flex-wrap justify-content-center section-color">
+                        <div id="satisfaction" class="cards d-flex flex-md-row flex-wrap justify-content-center section-color">
                             <div class="card">
-                                <img src="assets/images/ribbons/satisfaction.png" alt="card image top" class="card-img-top">
+                                <img src="satisfaction.png" alt="card image top" class="card-img-top">
                                 <div class="card-body">
                                     <h3 class="card-title">Satisfaction<br>Guarantee</h3>
                                     <p class="card-text">services galore</p>
-                                    <a href="#" class="btn btn-primary">More Info</a>
+                                    <button class="btn btn-primary text-center p-3"><i class="fas fa-info p-1"></i>More Info</button>
                                 </div>
                             </div>
                             <div class="card">
-                                <img src="assets/images/ribbons/satisfaction.png" alt="card image top" class="card-img-top">
+                                <img src="satisfaction.png" alt="card image top" class="card-img-top">
                                 <div class="card-body">
                                     <h3 class="card-title">Friendly<br>Staff</h3>
                                     <p class="card-text">services galore</p>
-                                    <a href="#" class="btn btn-primary">More Info</a>
+                                    <button class="btn btn-primary text-center p-3"><i class="fas fa-info p-1"></i>More Info</button>
                                 </div>
                             </div>
                             <div class="card">
-                                <img src="assets/images/ribbons/satisfaction.png" alt="card image top" class="card-img-top">
+                                <img src="satisfaction.png" alt="card image top" class="card-img-top">
                                 <div class="card-body">
                                     <h3 class="card-title">Great<br>Service</h3>
                                     <p class="card-text">services galore</p>
-                                    <a href="#" class="btn btn-primary">More Info</a>
+                                    <button class="btn btn-primary text-center p-3"><i class="fas fa-info p-1"></i>More Info</button>
                                 </div>
                             </div>
                         </div>
@@ -236,22 +238,22 @@
 
                 <!-- Customer Testimony -->
 
-                <div class="row pt-4 pb-4">
+                <div class="row pt-5 pb-5">
                     <div class="col-md-12">
                         <h1 class="text-center ml-10">What our Customers Say</h1><br>
                     </div>
                 </div>
 
-                <div id="testimonials" class="container-fluid text-center pt-4 pb-4">
+                <div id="testimonials" class="container-fluid text-center pt-5 pb-5">
         
-                    <div class="row">
+                    <div class="row flex-wrap justify-content-center">
                         <div class="col-md-3">
-                            <div class="testimonial flex-wrap justify-content-center">
+                            <div class="testimonial desktop shadow-lg">
                                 <blockquote>
                                     <p class="text-left big-margin">
                                         <i>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis porro labore voluptatibus impedit voluptates rem quos blanditiis, unde similique totam. Deleniti molestias tempore officia error. Harum modi aliquid odio sunt?</p>
-                                        </i><br>
+                                        </i>
                                     <span class="name">
                                         -Julie
                                     </span>
@@ -260,12 +262,12 @@
                         </div>
                         
                         <div class="col-md-3">
-                            <div class="testimonial big-margin">
+                            <div class="testimonial desktop shadow-lg">
                                 <blockquote>
-                                    <p class="text-left">
+                                    <p class="text-left big-margin">
                                         <i>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis porro labore voluptatibus impedit voluptates rem quos blanditiis, unde similique totam. Deleniti molestias tempore officia error. Harum modi aliquid odio sunt?</p>
-                                        </i><br>
+                                        </i>
                                     <span class="name">
                                         -Brock
                                     </span>
@@ -274,12 +276,12 @@
                         </div>
         
                         <div class="col-md-3">
-                            <div class="testimonial">
+                            <div class="testimonial desktop shadow-lg">
                                 <blockquote>
                                     <p class="text-left big-margin">
                                         <i>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis porro labore voluptatibus impedit voluptates rem quos blanditiis, unde similique totam. Deleniti molestias tempore officia error. Harum modi aliquid odio sunt?</p>
-                                        </i><br>
+                                        </i>
                                     <span class="name">
                                         -Sarah
                                     </span>
@@ -288,12 +290,12 @@
                         </div>
                         
                         <div class="col-md-3">
-                            <div class="testimonial">
+                            <div class="testimonial desktop shadow-lg">
                                 <blockquote>
                                     <p class="text-left big-margin">
                                         <i>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis porro labore voluptatibus impedit voluptates rem quos blanditiis, unde similique totam. Deleniti molestias tempore officia error. Harum modi aliquid odio sunt?</p>
-                                        </i><br>
+                                        </i>
                                     <span class="name">
                                         -Joel
                                     </span>
@@ -312,22 +314,24 @@
             <!-- APP SECTION -->
 
             <section id="app-section" class="section-3 container-fluid text-center">
-                <div class="row pt-4 pb-4">
+                <div class="row pt-5 pb-5">
                     <div class="col-md-12 col-sm-12">
                         <h1>Download Our App</h1><br>
                         <p class="big-margin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi consequuntur facilis possimus, non incidunt delectus excepturi quibusdam ea quae quisquam rerum alias asperiores, numquam sapiente quaerat ut maiores doloremque itaque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eveniet libero asperiores debitis perspiciatis, in beatae ex aspernatur rerum quia qui laudantium nobis recusandae corrupti natus porro laboriosam iusto facere.</p>
                     </div>
                 </div>
                 <!-- Platform row -->
-                <div id="app-icon-row" class="row platform pt-4 pb-4">
+                <div id="app-icon-row" class="row platform pt-5 pb-5">
                     <div class="col-md-6 col-sm-12 text-right">
-                        <div class="desktop shadow-sm">
-                            <div class="d-flex flex-row flex-wrap justify-content-center pt-4 pb-4 platform-content">
+                        <div class="desktop shadow-lg">
+                            <div class="d-flex flex-row flex-wrap justify-content-center pt-5 pb-5 platform-content">
                                 <!-- Desktop icon that is 3x larger than normal (fa-3x) --> 
                                 <div class="text text-left">
                                     <!-- padding 1, margin 0 -->
-                                    <h3 class="pt-2 m-0 text-center"><i class="fas fa-desktop fa-2x py-2 pr-3"></i>Desktop</h3>
-                                    <p class="p-4 ml-2 mr-2">Get in touch with our services on your Windows Device.</p>                                
+                                    <center>
+                                        <h3 class="pt-2 m-0 text-center"><i class="fas fa-desktop fa-2x py-2 pr-3"></i>Desktop</h3>
+                                        <p class="p-4 ml-2 mr-2">Get in touch with our services on your Windows Device.</p>                                
+                                    </center>
                                     <center>
                                         <a href="#" class="btn btn-primary flex-nowrap justify-content-center text-center">
                                             <i class="fa-brands fa-windows fa-2x" aria-hidden="true"></i>
@@ -343,12 +347,14 @@
                     </div>
                     <div class="col-md-6 col-sm-12 text-left">
                         <!-- Subtle shadow effect over this section of the page -->
-                        <div class="desktop shadow-sm">
-                            <div class="d-flex flex-row flex-wrap justify-content-center pt-4 pb-4">
+                        <div class="desktop shadow-lg">
+                            <div class="d-flex flex-row flex-wrap justify-content-center pt-5 pb-5">
                                 <!-- Desktop icon that is 3x larger than normal (fa-3x) -->
                                 <div class="text text-left">
-                                    <h3 class="pt-2 m-0"><i class="fas fa-mobile fa-2x py-2 pr-3"></i>Mobile</h3>
-                                    <p class="p-4 m-2 mr-2">For your mobile needs</p>   
+                                    <center>
+                                        <h3 class="pt-2 m-0"><i class="fas fa-mobile fa-2x py-2 pr-3"></i>Mobile</h3>
+                                        <p class="p-4 m-2 mr-2">Get in touch with our services for your mobile needs.</p>   
+                                    </center>
                                     <center>
                                         <a href="#" class="btn btn-primary flex-nowrap justify-content-center text-center">
                                             <i class="fa-brands fa-android fa-2x" aria-hidden="true"></i>
@@ -374,7 +380,7 @@
                 
                 <!-- Title -->
 
-                <div class="row pt-4 pb-4">
+                <div class="row pt-5 pb-5">
                     <div class="col-md-12 col-sm-12">
                         <h1 class="text-center">Our Team</h1><br>
                     </div>
@@ -384,7 +390,7 @@
 
                 <div class="container text-center flex-wrap">
                     
-                    <div class="row team-row pt-4 pb-4">
+                    <div class="row team-row pt-5 pb-5">
                     
                         <!-- Face 1 -->
 
@@ -439,7 +445,7 @@
         
         <footer>
             <div id="footer-container" class="container-fluid">
-                <div class="row pt-4 pb-4">
+                <div class="row p-5">
                     <!-- Conclusion Text -->
                     <div id="footer-content-left" class="footer-module row text-left">
                         <div class="col-md-5">
@@ -461,18 +467,35 @@
                             <div class="row">
                                 <div class="col-md-6">
                                         <form action="email-form" class="form" role="form">
-        
-                                        <!-- Name -->
-                                        <div class="form-group">
-                                            <label class="form-control" for="name">Name</label>
-                                            <input id="name" type="text" name="name" onfocus="this.value=''" placeholder="(Required) Your Name" class="form-control bg-dark text-white" required> 
-                                        </div>
-                
-                                        <!-- Email -->
-                                        <div class="form-group">
-                                            <label class="form-control" for="email">Email</label>
-                                            <input id="email" type="text" name="email" onfocus="this.value=''" placeholder="(Required) Your Email" class="form-control bg-dark text-white" required>
-                                        </div>
+                                        
+                                            <!-- Name -->
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                  <span class="input-group-text" id="name">Name</span>
+                                                </div>
+                                                <input type="text" class="form-control bg-dark text-light" onfocus="this.value=''" placeholder="Name" aria-label="name" aria-describedby="basic-addon1">
+                                            </div>
+
+                                            <!-- Email -->
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                  <span class="input-group-text" id="email">Email</span>
+                                                </div>
+                                                <input type="text" class="form-control bg-dark text-light" onfocus="this.value=''" placeholder="Email" aria-label="email" aria-describedby="basic-addon1">
+                                            </div>
+                                        
+                                            <!-- Name -->
+                                            <!-- <div class="form-group">
+                                                <label for="name">Name</label>
+                                                <input id="name" type="text" name="name" onfocus="this.value=''" placeholder="(Required) Your Name" class="form-control bg-dark text-white" required> 
+                                            </div> -->
+                    
+                                            <!-- Email -->
+                                            <!-- <div class="form-group">
+                                                <label for="email">Email</label>
+                                                <input id="email" type="text" name="email" onfocus="this.value=''" placeholder="(Required) Your Email" class="form-control bg-dark text-white" required>
+                                            </div> -->
+                                        </form>
                                     </div>
                                     
                                 </div>
@@ -482,14 +505,15 @@
         
                                         <!-- Message -->
                                         <div class="form-group">
-                                            <textarea id="message" class="form-control" name="message" id="message-area" onfocus="this.value=''" cols="30" rows="5" placeholder="(Optional) Leave a Message..."></textarea>
+                                            <textarea id="message" class="form-control bg-dark text-light" onfocus="this.value=''" name="message" id="message-area" onfocus="this.value=''" cols="30" rows="5" placeholder="(Optional) Leave a Message..."></textarea>
                                         </div>
                 
                                         <!-- Arrow -->
                                         <div class="form-group">
                                             <span class="input-group-text">
-                                                <i class="fas fa-arrow-right"></i>
-                                                <input type="submit" id="form-button" class="btn btn-default" href="#" onclick="formSubmit()">
+                                                <button type="submit" id="form-button" class="btn btn-default" href="#" onclick="formSubmit()">
+                                                    <i class="fas fa-arrow-right bg-light"></i>
+                                                </button>
                                             </span>
                                         </div>
                                     </div>
@@ -498,12 +522,12 @@
                         </div>
         
                         <!-- Social -->
-                        <div id="footer-content-right" class="footer-module col-md-2">
+                        <div id="footer-content-right" class="footer-module col-md-2 text-right">
                     
-                            <h2 class="text-light">Follow Us!</h2>
+                            <h2 class="text-light">Follow Us!</h2><br>
                     
-                            <div class="footer-content column">
-                    
+                            <div id="footer-social" class="footer-content column">
+                                
                                 <a href="#">
                     
                                     <i class="fab fa-facebook-f fa-2x"></i>

@@ -34,7 +34,11 @@
     --raleway-font: 'Raleway', sans-serif;
     --section-color: rgb(186;  148;  224);
     --gold-color: rgb(255, 130, 0);
-    --orange-lingrad: linear-gradient(rgb(255, 8, 0), rgb(255, 185, 0));
+    --orange-lingrad: linear-gradient(to bottom,rgb(255, 8, 0), rgb(255, 185, 0),var(--bright-bone));
+
+    /* This is more the linear gradient I want with animations for the hover menu */
+    --example-lingrad:  linear-gradient(to right bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    
     --orange-lingrad-reverse: linear-gradient(rgb(255, 185, 0),rgb(255, 8, 0));
     --basalt: rgb(25, 25, 30);
     --bright-bone: rgb(246, 246, 216);
@@ -101,7 +105,7 @@ a,a:hover,a:focus,a:active {
 
 
 header {
-    background: var(--orange-lingrad);
+    background: var(--example-lingrad);
     background-size: cover;
     color: var(--bright-bone);
     height: 100vh;
@@ -243,6 +247,7 @@ p {
 
 #satisfaction .card {
     margin-left: 4em;
+    border-radius: 2%;
 }
 
 /* .paramargin {
@@ -470,11 +475,9 @@ input[type=text] {
 
 /* NEEDS TO BE ADJUSTED */
 
-
-
+/* Background animation for hover */
 .nav-item:hover {
     background-color: black;
-    border-radius: 5%;
 }
 
 @keyframes flicker {

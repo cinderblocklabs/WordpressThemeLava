@@ -1,6 +1,5 @@
-/* CTRL SHIFT K TO DELETE WHOLE LINE */
-
 /* WORDPRESS INFO */
+
 /* 
 
     Theme Name: Lava
@@ -34,11 +33,12 @@
     --limelight-font: 'Limelight', cursive;
     --raleway-font: 'Raleway', sans-serif;
     --section-color: rgb(186;  148;  224);
-    --gold-color: rgb(255, 180, 0);
+    --gold-color: rgb(255, 130, 0);
     --orange-lingrad: linear-gradient(rgb(255, 8, 0), rgb(255, 185, 0));
     --orange-lingrad-reverse: linear-gradient(rgb(255, 185, 0),rgb(255, 8, 0));
-    --basalt: rgb(32, 37, 41);
-    --bone: rgb(246, 246, 216);
+    --basalt: rgb(25, 25, 30);
+    --bright-bone: rgb(246, 246, 216);
+    --bone: rgb(222, 240, 158);
     --bone-lingrad: linear-gradient(rgb(246, 246, 216),whitesmoke);
 }
 
@@ -75,7 +75,7 @@ hr {
 }
 
 body {
-    background-color: var(--bone);
+    background-color: var(--bright-bone);
     font-family: var(--raleway-font);
     /* min-height: 100vh; */
     height: auto;
@@ -83,6 +83,10 @@ body {
     /* margin-top: 11vh; */
     position: absolute;
     overflow-x: hidden;
+}
+
+button {
+    font-family: var(--raleway-font);
 }
 
 /* MAIN  */
@@ -99,7 +103,7 @@ a,a:hover,a:focus,a:active {
 header {
     background: var(--orange-lingrad);
     background-size: cover;
-    color: var(--bone);
+    color: var(--bright-bone);
     height: 100vh;
     width: 100%;
     z-index: -1;
@@ -110,6 +114,10 @@ header {
     -ms-user-select: none;
     user-select: none;
     /* animation: heatfade 10s ease-in infinite; */
+}
+
+.title-section {
+    color: var(--bone);
 }
 
 /* HEADER MEDIA QUERY */
@@ -154,11 +162,6 @@ header {
     user-select: none;
 }
 
-.title-section {
-    font-family: var(--);
-    color: var(--gold-color);
-}
-
 #header-container {
     display: flex;
     justify-content: center;
@@ -166,11 +169,19 @@ header {
 }
 
 .raleway-font {
-    font-family: var;
+    font-family: var(--raleway-font);
 }
 
 .limelight-font {
     font-family: var(--limelight-font);
+}
+
+.gold-color {
+    color: gold;
+}
+
+.segoe-font {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header h1 {
@@ -187,7 +198,6 @@ header h2 {
 header p {
     margin-top: 2em;
     font-size: 1.5em;
-    color: var(--bone);
 }
 
 header img {
@@ -225,10 +235,20 @@ p {
     overflow-wrap: normal;
 }
 
-.paramargin {
+.testimonial {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    /* border-radius: 5%; */
+}
+
+#satisfaction .card {
+    margin-left: 4em;
+}
+
+/* .paramargin {
     margin-left: 10em;
     margin-right: 10em;
-}
+} */
 
 /* MEDIA QUERY FOR FOOTER */
 @media only screen and  (max-width: 600px) {
@@ -245,12 +265,14 @@ p {
 
 footer {
     background: var(--orange-lingrad-reverse);
+    font-size: 18px;
     position: relative;
-    color: var(--bone);
+    /* color: var(--bright-bone); */
+    color:whitesmoke;
     /* font-weight: bold; */
     width: 100%;
     height: 100vh;
-    margin-top: 86vh;
+    margin-top: 90vh;
     bottom: 0;  
     clear:both;
     /* transform: translateY(50vh);   */
@@ -260,6 +282,13 @@ footer {
 footer p {
     /* margin-top: 2em; */
     font-size: 16px;
+    margin-right: 2em;
+}
+
+#footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #footer-container {
@@ -307,8 +336,14 @@ footer p {
 #navigation a {
     display: inline-block;
     font-size: 22px;
+    height: 8vh;
     text-decoration: none;
-    color: orange;
+    color: var(--gold-color);
+}
+
+#dropdown-menu {
+    background-color: var(--basalt);
+    color: var(--bone);
 }
 
 .nav-items {
@@ -405,12 +440,14 @@ footer p {
 }
 
 label {
+    font-size: 22px;
     width: 50px;
 }
 
 .name {
     font-weight: bold;
     font-style: italic;
+    text-align: right;
 }
 
 /* ONLY TARGETS INPUTS OF TEXT TYPE */
