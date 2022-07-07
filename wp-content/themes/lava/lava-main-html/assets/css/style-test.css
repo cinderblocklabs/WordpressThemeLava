@@ -1,7 +1,5 @@
-
-/* CTRL SHIFT K TO DELETE WHOLE LINE */
-
 /* WORDPRESS INFO */
+
 /* 
 
     Theme Name: Lava
@@ -35,7 +33,7 @@
     --limelight-font: 'Limelight', cursive;
     --raleway-font: 'Raleway', sans-serif;
     --section-color: rgb(186;  148;  224);
-    --gold-color: rgb(255, 180, 0);
+    --gold-color: rgb(255, 130, 0);
     --orange-lingrad: linear-gradient(rgb(255, 8, 0), rgb(255, 185, 0));
     --orange-lingrad-reverse: linear-gradient(rgb(255, 185, 0),rgb(255, 8, 0));
     --basalt: rgb(32, 37, 41);
@@ -87,10 +85,6 @@ body {
 }
 
 /* MAIN  */
-
-main {
-    
-}
 
 /* NAVIGATION */
 
@@ -161,7 +155,7 @@ header {
 
 .title-section {
     font-family: var(--);
-    color: var(--gold-color);
+    color: var(--bone);
 }
 
 #header-container {
@@ -313,7 +307,7 @@ footer p {
     display: inline-block;
     font-size: 22px;
     text-decoration: none;
-    color: orange;
+    color: var(--bone);
 }
 
 .nav-items {
