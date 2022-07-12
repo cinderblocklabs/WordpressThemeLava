@@ -420,6 +420,7 @@ p {
 }
 
 footer {
+
     background: var(--orange-lingrad-reverse);
     font-size: 18px;
     position: relative;
@@ -433,6 +434,11 @@ footer {
     clear:both;
     /* transform: translateY(50vh);   */
     z-index: 2;
+
+}
+
+#footer-container-mobile {
+    display: none   ;
 }
 
 footer p {
