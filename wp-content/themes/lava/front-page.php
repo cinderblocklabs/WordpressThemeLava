@@ -22,14 +22,16 @@
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
         
         <!-- FontAwesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         
         <!-- Custom CSS Stylesheet -->
-        <link rel="stylesheet" type="text/css" href="style-test.css" media="screen" integrity="">
-        
+        <link rel="stylesheet" type="text/css" href="wp-content/themes/lava/style.css" media="screen" integrity="">
+
+        <!-- Custom CSS PHP function -->
+
         <!-- FONTS -->
         
         <!-- Pinyon Script -->
@@ -55,18 +57,20 @@
         <!-- Need to Fix Dropdown menu and add targets to each of the links -->
         <!-- I also want to add click animation for links when user clicks a link -->
         
-        <div id="navigation" class="container-fluid p-0">
+        <div id="navigation" class="container-fluid p-0 desktop shadow-lg">
             
             <nav class="navbar navbar-expand-lg section-color">
-                    
-                <a class="navbar-brand limelight-font" href="#"><h1><i>Lava</i></h1></a>
                 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
-                aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation" style="background-color: white;">
+                <div class="container-fluid">
+                    
+                    <a class="navbar-brand limelight-font" href="#"><h1><i>Lava</i></h1></a>
+                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
+                    aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
-                <div id="navbarID" class="collapse navbar-collapse">
+                <div class="collapse navbar-collapse">
                     <!-- div mr-auto ('margin-right auto') -->
                     <div class="mr-auto"></div>
                     
@@ -148,7 +152,7 @@
                 <!-- with 25% height added ('h-25') -->
                 <div class="col-md-5 col-sm-12 h-25">
                     <!-- MAIN BACKGROUND IMAGE -->
-                    <img class="bkg-img" src="assets/images/thematic/bird.png" alt="Image from freesvg.com">
+                    <img class="bkg-img" src="bird.png" alt="Image from freesvg.com">
                 </div>
             </div>
         </header>
@@ -169,7 +173,7 @@
                 <container class="text-center justify-content-center">
                     <div class="row pt-5 pb-5">
                         <div class="col-md-6">
-                            <img class="section-1-img" src="assets/images/backgrounds/landscape1.jpg" alt="section 1 image 1">
+                            <img class="section-1-img" src="landscape1.jpg" alt="section 1 image 1">
                             <div class="panel pt-5 pb-5">
                                 <h1 class="text-center pb-4">Our History</h1>
                                 <!-- paragraph with top padding of 4px (') -->
@@ -177,7 +181,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <img class="section-1-img" src="assets/images/backgrounds/landscape2.jpg" alt="section 1 image 2">
+                            <img class="section-1-img" src="landscape2.jpg" alt="section 1 image 2">
                             <div class="panel pt-5 pb-5">
                                 <h1 class="text-center pb-4">Our Mission</h1>
                                 <!-- paragraph with top padding of 4px (') -->
@@ -203,62 +207,35 @@
                 <div class="container-fluid text-center pt-5 pb-5">
                     
                     <!-- desktop shadow over this section -->
-                    <div id="satisfaction" class="desktop shadow-lg pt-5 pb-5">
+                    <div class="desktop shadow-lg pt-5 pb-5">
                         <!-- addign a flex container with wrapping and centered (d-flex flex-md-row flex-wrap justify-content-center) -->
-                        
-                        <div class="cards section-color">
-                            <div class="card desktop shadow-sm">
-                                <img src="assets/images/ribbons/satisfaction.png" alt="card image top" class="card-img-top">
+                        <div id="satisfaction" class="cards d-flex flex-md-row flex-wrap justify-content-center section-color">
+                            <div class="card">
+                                <img src="satisfaction.png" alt="card image top" class="card-img-top">
                                 <div class="card-body">
                                     <h3 class="card-title">Satisfaction<br>Guarantee</h3>
                                     <p class="card-text">services galore</p>
-                                    <button class="btn btn-primary text-center p-3"><i class="fa-solid fa-circle-info p-1"></i>More Info</button>
+                                    <button class="btn btn-primary text-center p-3"><i class="fas fa-info p-1"></i>More Info</button>
                                 </div>
                             </div>
-                            <div class="card desktop shadow-sm">
-                                <img src="assets/images/ribbons/satisfaction.png" alt="card image top" class="card-img-top">
+                            <div class="card">
+                                <img src="satisfaction.png" alt="card image top" class="card-img-top">
                                 <div class="card-body">
                                     <h3 class="card-title">Friendly<br>Staff</h3>
                                     <p class="card-text">services galore</p>
-                                    <button class="btn btn-primary text-center p-3"><i class="fa-solid fa-circle-info p-1"></i>More Info</button>
+                                    <button class="btn btn-primary text-center p-3"><i class="fas fa-info p-1"></i>More Info</button>
                                 </div>
                             </div>
-                            <div class="card desktop shadow-sm">
-                                <img src="assets/images/ribbons/satisfaction.png" alt="card image top" class="card-img-top">
+                            <div class="card">
+                                <img src="satisfaction.png" alt="card image top" class="card-img-top">
                                 <div class="card-body">
                                     <h3 class="card-title">Great<br>Service</h3>
                                     <p class="card-text">services galore</p>
-                                    <button class="btn btn-primary text-center p-3"><i class="fa-solid fa-circle-info p-1"></i>More Info</button>
+                                    <button class="btn btn-primary text-center p-3"><i class="fas fa-info p-1"></i>More Info</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- SERVICES SECTION (MOBILE) -->
-                <!-- !!! Only Appears in Mobile Versions !!! -->
-
-                <div id="services-section-mobile" class="container-fluid text-center pt-5 pb-5">
-
-                    <div class="desktop shadow-lg pt-4 pb-4">
-
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <h2 class="pb-2">services galore</h2>
-                                <button class="btn btn-primary text-center p-3"><i class="fa-solid fa-circle-info"></i>More Info</button>    
-                            </div>
-    
-                            <div class="col-sm-4">
-                                <h2 class="pb-2">services galore</h2>
-                                <button class="btn btn-primary text-center p-3"><i class="fa-solid fa-circle-info"></i>More Info</button>    
-                            </div>
-    
-                            <div class="col-sm-4">
-                                <h2 class="pb-2">services galore</h2>
-                                <button class="btn btn-primary text-center p-3"><i class="fa-solid fa-circle-info"></i>More Info</button>    
-                            </div>
-                        </div>
-                    </div>                    
                 </div>
 
                 <!-- Customer Testimony -->
@@ -464,119 +441,6 @@
                     </div>
                 </div>
             </section>
-
-            <!-- FACES SECTION (MOBILE) -->
-            <!-- Needs hamburger selector -->
-
-            <section id="faces-section-mobile" class="section-4">
-                
-                <!-- Title -->
-
-                <div class="row pt-5 pb-5">
-                    <div class="col-md-12 col-sm-12">
-                        <h1 class="text-center">Our Team</h1><br>
-                    </div>
-                </div>
-
-                <!-- Face Images -->
-
-                <div class="container text-center">
-                    
-                    <div class="row team-row pt-5 pb-5">
-                        
-                        <div class="col-md-4">
-                            <div id="face1" class="img-col desktop shadow-md">
-                                
-                                <!-- Face 1 -->
-                                <img src="face1.jpg" alt="Image from Unsplash" height="400" width="300">
-                                
-                                <!-- Hamburger Menu Code -->
-                                <nav class="navbar navbar-expand-lg bg-dark text-light">
-                                    <a class="navbar-brand" href="#">
-                                        <h3 class="text-center pt-2 pb-2">Jake</h3>
-                                    </a>
-
-                                    <!-- !!! Icon needs to be LIGHT COLORED !!! -->
-
-                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                                        <span class="navbar-toggler navbar-dark"></span>
-                                    </button>
-                                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                                        <ul class="navbar-nav">
-                                            <li class="nav-item active">
-                                                <a class="nav-link" href="#">
-                                                    <!-- Description -->
-                                                    <div class="description pt-2 pb-2">
-                                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat accusantium, necessitatibus facilis incidunt eveniet, quasi molestias voluptas sunt qui vel officia? Deserunt cumque inventore iste voluptate voluptatum autem asperiores dignissimos!</p>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </nav>                        
-                            </div>
-
-                            <div id="face2" class="img-col desktop shadow-md">
-                                
-                                <!-- Face 2 -->
-                                <img src="face2.jpg" alt="Image from Unsplash" height="400" width="300">
-                                
-                                <!-- Hamburger Menu Code -->
-                                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                                    <a class="navbar-brand" href="#">
-                                        <h3 class="text-center pt-2 pb-2">Madison</h3>
-                                    </a>
-                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown2" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                                        <span class="navbar-toggler-icon"></span>
-                                    </button>
-                                    <div class="collapse navbar-collapse" id="navbarNavDropdown2">
-                                        <ul class="navbar-nav">
-                                            <li class="nav-item active">
-                                                <a class="nav-link" href="#">
-                                                    <!-- Description -->
-                                                    <div class="description pt-2 pb-2">
-                                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat accusantium, necessitatibus facilis incidunt eveniet, quasi molestias voluptas sunt qui vel officia? Deserunt cumque inventore iste voluptate voluptatum autem asperiores dignissimos!</p>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </nav>                        
-                            </div>
-
-                            <div id="face3" class="img-col desktop shadow-md">
-                                
-                                <!-- Face 1 -->
-                                <img src="face3.jpg" alt="Image from Unsplash" height="400" width="300">
-                                
-                                <!-- Hamburger Menu Code -->
-                                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                                    <a class="navbar-brand" href="#">
-                                        <h3 class="text-center pt-2 pb-2">Olivia</h3>
-                                    </a>
-                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown3" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                                        <span class="navbar-toggler-icon"></span>
-                                    </button>
-                                    <div class="collapse navbar-collapse" id="navbarNavDropdown3">
-                                        <ul class="navbar-nav">
-                                            <li class="nav-item active">
-                                                <a class="nav-link" href="#">
-                                                    <!-- Description -->
-                                                    <div class="description pt-2 pb-2">
-                                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat accusantium, necessitatibus facilis incidunt eveniet, quasi molestias voluptas sunt qui vel officia? Deserunt cumque inventore iste voluptate voluptatum autem asperiores dignissimos!</p>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </nav>                        
-                            </div>
-                        
-                        </div>
-                        
-                    </div>
-                </div>
-            </section>
         </main>
 
         <!-- FOOTER -->
@@ -703,31 +567,4 @@
             </div>
         </footer>
     </body>
-
-    <!-- SCRIPTS -->
-    <!-- MOBILE HAMBURGER MENU SCRIPT -->
-
-    <script type="text/javascript" id="hamburger()">
-        
-    </script>
-
-    <!-- Header Button Script -->
-
-    <!-- <script type="text/javascript" id="testButtonAction()">
-        alert("You have clicked the button");
-    </script> -->
-
-    <!-- Form Submission Script -->
-
-    <script type="text/javascript" id="dropdown()">
-        
-        // formSubmit()
-
-        function formSubmit() {
-            
-            document.email-form.submit();
-            document.email-form.reset();
-        
-        }
-    </script>
 </html>
