@@ -208,6 +208,13 @@ header {
     /* animation: heatfade 10s ease-in infinite; */
 }
 
+#header-intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .header-title {
    
     color: var(--bone);
@@ -355,6 +362,16 @@ header button {
 .segoe-font {
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/* APP SECTION */
+
+#app-icon-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
 }
 

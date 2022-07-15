@@ -57,7 +57,10 @@
         <!-- Need to Fix Dropdown menu and add targets to each of the links -->
         <!-- I also want to add click animation for links when user clicks a link -->
         
-        <div id="navigation" class="container-fluid p-0">
+        <!-- Need to set scroll behavior so that it focuses content to center of screen instead of all the way on top -->
+
+        
+        <div id="navigation" class="container-fluid p-0">   
             
             <nav class="navbar navbar-expand-lg section-color">
                     
@@ -94,7 +97,7 @@
 
                                 <div id="dropdown-menu" class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="#services-section">Our Services</a>
-                                    <a class="dropdown-item" href="#">Testimonials</a>
+                                    <a class="dropdown-item" href="#testimonials">Testimonials</a>
                                     <!-- <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="#">Something else here</a> -->
                                 </div>
@@ -173,7 +176,7 @@
                     <div class="col-md-12 col-sm-12">
                         
                         <!-- Section Title -->
-                        <h1 class="title-section">About Us</h1><br>
+                        <h1 id="about" class="title-section">About Us</h1><br>
                         
                         <!-- Section Description -->
                         <p id="intro-description" class="text-left big-margin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eveniet libero asperiores debitis perspiciatis, in beatae ex aspernatur rerum quia qui laudantium nobis recusandae corrupti natus porro laboriosam iusto facere. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eveniet libero asperiores debitis perspiciatis, in beatae ex aspernatur rerum quia qui laudantium nobis recusandae corrupti natus porro laboriosam iusto facere. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eveniet libero asperiores debitis perspiciatis, in beatae ex aspernatur rerum quia qui laudantium nobis recusandae corrupti natus porro laboriosam iusto facere. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque repellendus optio ut aperiam, aliquid debitis perferendis distinctio magnam officia modi! Adipisci suscipit dignissimos, consectetur maiores tempora quisquam totam? Veritatis, voluptatibus.</p>
@@ -213,7 +216,7 @@
                     <div class="col-md-12 col-sm-12">
 
                         <!-- Section Title -->
-                        <h1 class="text-center">Our Services</h1><br>
+                        <h1 id="services" class="text-center">Our Services</h1><br>
                         
                         <!-- Section Text -->
                         <p id="services-description" class="section-description big-margin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium fuga corporis, vitae voluptas necessitatibus blanditiis delectus reiciendis. Fugiat explicabo labore doloremque quas sunt nemo magnam aperiam consequuntur, inventore modi voluptas? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eveniet libero asperiores debitis perspiciatis, in beatae ex aspernatur rerum quia qui laudantium nobis recusandae corrupti natus porro laboriosam iusto facere.</p>
@@ -427,7 +430,7 @@
                     <div class="col-md-12 col-sm-12">
                         
                         <!-- Section Title -->
-                        <h1 class="text-center">Download Our App</h1><br>
+                        <h1 id="downloads" class="text-center">Download Our App</h1><br>
                         
                         <!-- Section Description -->
                         <p class="big-margin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi consequuntur facilis possimus, non incidunt delectus excepturi quibusdam ea quae quisquam rerum alias asperiores, numquam sapiente quaerat ut maiores doloremque itaque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eveniet libero asperiores debitis perspiciatis, in beatae ex aspernatur rerum quia qui laudantium nobis recusandae corrupti natus porro laboriosam iusto facere.</p>
@@ -437,9 +440,8 @@
                 <!-- Platform row -->
                 <div id="app-icon-row" class="row platform pt-5 pb-5">
                     
-                    
                     <!-- PC App -->
-                    <div class="col-md-6 col-sm-12 text-right">
+                    <div class="col-md-4 col-sm-12 text-right">
                         <div class="desktop shadow-lg">
                             <div class="d-flex flex-row flex-wrap justify-content-center pt-5 pb-5 platform-content">
                                 <!-- Desktop icon that is 3x larger than normal (fa-3x) --> 
@@ -464,7 +466,7 @@
                     </div>
                     
                     <!-- Android App -->
-                    <div class="col-md-6 col-sm-12 text-left">
+                    <div class="col-md-4 col-sm-12 text-left">
                         <!-- Subtle shadow effect over this section of the page -->
                         <div class="desktop shadow-lg">
                             <div class="d-flex flex-row flex-wrap justify-content-center pt-5 pb-5">
