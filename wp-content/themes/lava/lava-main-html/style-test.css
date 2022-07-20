@@ -21,8 +21,11 @@
 
 /* IMPORTS */
 
-/* RALEWAY */
+/* RALEWAY 300 */
 @import url(https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap);
+
+/* RALEWAY 400 */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 /* LIMELIGHT 400 */
 @import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
@@ -30,31 +33,45 @@
 /* VARIABLES */
 
 :root {
+
+    /* FONTS */
     --limelight-font: 'Limelight', cursive;
     --raleway-font: 'Raleway', sans-serif;
+    
+    /* COLORS */
     --section-color: rgb(186;  148;  224);
     --gold-color: rgb(255, 130, 0);
-    --orange-lingrad: linear-gradient(to bottom,rgb(255, 8, 0), rgb(255, 185, 0),var(--bright-bone));
-    
-    /* This is more the linear gradient I want with animations for the hover menu */
-    --example-lingrad:  linear-gradient(to right bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-    
-    --orange-lingrad-reverse: linear-gradient(rgb(255, 185, 0),rgb(255, 8, 0));
     --basalt: rgb(25, 25, 30);
+    --ash: rgb(101, 101, 113);
     --bright-bone: rgb(246, 246, 216);
     --bone: rgb(222, 240, 158);
-    --bone-lingrad: linear-gradient(rgb(246, 246, 216),whitesmoke);
+    
+    /* GRADIENTS */
+
+    /* This is more the linear gradient I want with animations for the hover menu */
+    --example-lingrad:  linear-gradient(to right bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+
+    --blue-lingrad: linear-gradient(to bottom,rgb(0, 166, 255), var(--bright-bone),whitesmoke);
+    --orange-lingrad: linear-gradient(to bottom,rgb(255, 8, 0), rgb(255, 185, 0),var(--bright-bone));
+    --orange-lingrad-reverse: linear-gradient(to top,rgb(255, 8, 0), rgb(255, 185, 0));
+    --ash-lingrad: linear-gradient(to bottom,var(--ash),rgb(205, 196, 196),white);
+    --ash-lingrad-reverse: linear-gradient(to top,var(--ash),rgb(205, 196, 196),white);
+    --bone-lingrad: linear-gradient(to bottom,rgb(246, 246, 216),whitesmoke);
+
 }
 
 /* GLOBALS */
 
 html {
+
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
+
     margin: 0px;
     overflow-wrap: break-word;
     -webkit-touch-callout: none;
@@ -63,14 +80,18 @@ h1, h2, h3, h4, h5, h6 {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
 }
 
 label {
+
     font-size: 22px;
     width: 50px;
+
 }
 
 hr {
+
     background-color: var(--gold-color);
     box-shadow: 0 20px 20px -20px #333; 
     height: 2px;
@@ -81,6 +102,7 @@ hr {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
 }
 
 textarea {
@@ -99,7 +121,7 @@ body {
 
 }
 
-/* Body MEdia Query */
+/* Body Media Query */
 @media only screen and (max-width: 600px) {
     
     body {
@@ -152,6 +174,11 @@ a,a:hover,a:focus,a:active {
     font-weight: bold;
     font-style: italic;
     text-align: right;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -208,24 +235,28 @@ header {
     /* animation: heatfade 10s ease-in infinite; */
 }
 
-#header-intro {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
 .header-title {
    
-    color: var(--bone);
+    color: orange;
     font-family: var(--limelight-font);
+    text-shadow: black 1px 1px;
 
+}
+
+.header-subtitle {
+    color: rgb(248, 189, 79);
+    font-family: var(--raleway-font);
 }
 
 .title-section {
-
+    background-color: var(--bright-bone);
     color: orange;
+    height: 150px;
+    width: 100%;
+    font-style: bold;
     text-align: center;
+    font-family: url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+    box-shadow: 0px 0px 4px orange;
 
 }
 
@@ -298,11 +329,6 @@ header button {
     color: var(--bone);
 }
 
-#header-button {
-    color: var(--bone);
-    background-color: rgb(255, 25, 0);
-}
-
 #header-button:hover {
     background: rgb(150, 24, 7);
     color: orange;
@@ -360,7 +386,6 @@ header button {
 }
 
 .segoe-font {
-
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
@@ -395,14 +420,23 @@ header button {
 #satisfaction .card {
     /* margin-left: 4em; */
     border-radius: 2%;
+    background: var(--blue-lingrad);
+    color: var(--basalt);
 }
 
 .testimonial {
     padding-top: 1em;
     padding-bottom: 1em;
+    background: var(--bright-bone);
+    /* background: var(--example-lingrad); */
+    color: var(--basalt);
+    /* box-shadow: 0px 0px 8px orange; */
     /* border-radius: 5%; */
 }
 
+.name {
+    color: orange;
+}
 
 .card {
     margin: 2px 8px 2px 8px;
@@ -509,6 +543,11 @@ footer {
     display: none   ;
 }
 
+#footer-container {
+    height: 90vh;
+    margin-top: 5vh;
+}
+
 footer p {
     /* margin-top: 2em; */
     font-size: 16px;
@@ -521,10 +560,6 @@ footer p {
     align-items: center;
 }
 
-#footer-container {
-    height: 100vh;
-    margin-top: 5vh;
-}
 
 #footer-copyright {
     float: right;
@@ -585,6 +620,20 @@ footer p {
 
 .flex-center {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-center-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-center-col {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
