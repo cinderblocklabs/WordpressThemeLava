@@ -159,7 +159,7 @@
                 <!-- with 25% height added ('h-25') -->
                 <div class="col-md-5 col-sm-12 h-25">
                     <!-- MAIN BACKGROUND IMAGE -->
-                    <img class="bkg-img" src="assets/images/thematic/bird.png" alt="Image from freesvg.com">
+                    <img class="bkg-img" src="wp-content/themes/lava/bird.png" alt="Image from freesvg.com">
                 </div>
             </div>
         </header>
@@ -186,7 +186,7 @@
                 <container class="text-center justify-content-center">
                     <div class="row pt-5 pb-5">
                         <div class="col-md-6">
-                            <img class="section-1-img" src="assets/images/backgrounds/landscape1.jpg" alt="section 1 image 1">
+                            <img class="section-1-img" src="wp-content/themes/lava/landscape1.jpg" alt="section 1 image 1">
                             <div class="panel pt-5 pb-5">
                                 <h1 class="text-center pb-4">Our History</h1>
                                 <!-- paragraph with top padding of 4px (') -->
@@ -197,7 +197,7 @@
                         <div class="vr"></div>
 
                         <div class="col-md-6">
-                            <img class="section-1-img" src="assets/images/backgrounds/landscape2.jpg" alt="section 1 image 2">
+                            <img class="section-1-img" src="wp-content/themes/lava/landscape2.jpg" alt="section 1 image 2">
                             <div class="panel pt-5 pb-5">
                                 <h1 class="text-center pb-4">Our Mission</h1>
                                 <!-- paragraph with top padding of 4px (') -->
@@ -241,7 +241,7 @@
                             <div class="card desktop shadow-sm">
                                 
                                 <!-- Card Image -->
-                                <img src="assets/images/ribbons/satisfaction.png" alt="card image top" class="card-img-top">
+                                <img src="wp-content/themes/lava/assets/images/ribbons/satisfaction.png" alt="card image top" class="card-img-top">
                                 
                                 <!-- Card Body -->
                                 <div class="card-body">
@@ -261,7 +261,7 @@
                             <div class="card desktop shadow-sm">
                                 
                                 <!-- Card Image -->
-                                <img src="assets/images/ribbons/satisfaction.png" alt="card image top" class="card-img-top">
+                                <img src="wp-content/themes/lava/assets/images/ribbons/satisfaction.png" alt="card image top" class="card-img-top">
                                 
                                 <!-- Card Body -->
                                 <div class="card-body">
@@ -281,7 +281,7 @@
                             <div class="card desktop shadow-sm">
                                 
                                 <!-- Card Image -->
-                                <img src="assets/images/ribbons/satisfaction.png" alt="card image top" class="card-img-top">
+                                <img src="wp-content/themes/lava/assets/images/ribbons/satisfaction.png" alt="card image top" class="card-img-top">
                                 
                                 <!-- Card Body -->
                                 <div class="card-body">
@@ -813,10 +813,11 @@
                         </div>
 
                         <!-- WONT FLOAT RIGHT -->
-                        <p id="footer-copyright" class="text-center ml-4 mr-4">
-                    
-                            <h6>&copy;2022 | This page was made by <span>Cinderblock Labs</span></h6>    
-                    
+
+                        <!-- COPYRIGHT -->
+                        <p id="footer-copyright" class="text-center">
+                            <!-- Copyright Header -->
+                            <h6 id="copyright">&copy;2022 | This page was made by <span>Cinderblock Labs</span></h6>    
                         </p> 
                     </div>
                 </div>
@@ -864,12 +865,12 @@
                             </a>
                             
                             <!-- Hamburger Button -->
-                            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNavDropdown4" aria-controls="navbarNavDropdown4" aria-expanded="false" aria-label="Toggle navigation">
+                            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNavDropdown5" aria-controls="navbarNavDropdown4" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
 
 
-                            <div class="collapse navbar-collapse" id="navbarNavDropdown4">
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown5">
                                 <ul class="navbar-nav">
                                     <li class="nav-item active">
                                         <a class="nav-link" href="#">
@@ -911,11 +912,11 @@
                             </a>
                             
                             <!-- Hamburger Button -->
-                            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNavDropdown4" aria-controls="navbarNavDropdown4" aria-expanded="false" aria-label="Toggle navigation">
+                            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNavDropdown6" aria-controls="navbarNavDropdown4" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
 
-                            <div class="collapse navbar-collapse" id="navbarNavDropdown4">
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown6">
                                 <ul class="navbar-nav">
                                     <li class="nav-item active">
                                         <a class="nav-link" href="#">

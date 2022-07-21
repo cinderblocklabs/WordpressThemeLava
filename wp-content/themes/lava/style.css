@@ -2,14 +2,13 @@
 
 /* 
 
-    Theme Name: Lava
+    Theme Name: Lava Blue
     
-    Text Domain: Lava
+    Text Domain: Lava Blue
     
     Version: 1.0
     
-    Description: First ever wordpress theme. Intended to be versatile and suitable to many applications 
-    such as restaurants, travel sites, store frontpages and others. Not suitable for blogs though. 
+    Description: This is the 'Blue' version of the theme with a more neutral color scheme.
     
     Tags: responsive, mobile, simple, animated, versatile
     
@@ -40,7 +39,7 @@
     
     /* COLORS */
     --section-color: rgb(186;  148;  224);
-    --gold-color: rgb(255, 130, 0);
+    --gold-color: rgb(255, 115, 0);
     --basalt: rgb(25, 25, 30);
     --ash: rgb(101, 101, 113);
     --bright-bone: rgb(246, 246, 216);
@@ -49,11 +48,12 @@
     /* GRADIENTS */
 
     /* This is more the linear gradient I want with animations for the hover menu */
-    --example-lingrad:  linear-gradient(to right bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    --example-lingrad:  linear-gradient(to right bottom, #682049, #b01f96, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #558cfa, #52cffe, #41dfff, #1c64bc, #1466b3);
 
     --blue-lingrad: linear-gradient(to bottom,rgb(0, 166, 255), var(--bright-bone),whitesmoke);
-    --orange-lingrad: linear-gradient(to bottom,rgb(255, 8, 0), rgb(255, 185, 0),var(--bright-bone));
-    --orange-lingrad-reverse: linear-gradient(to top,rgb(255, 8, 0), rgb(255, 185, 0));
+    --orange-lingrad: linear-gradient(to bottom,rgb(255, 8, 0), var(--gold-color), rgb(255, 185, 0),rgb(255, 219, 120),
+    var(--bright-bone), white);
+    --orange-lingrad-reverse: linear-gradient(to bottom,rgb(255, 8, 0), var(--gold-color), rgb(255, 185, 0),rgb(255, 219, 120));
     --ash-lingrad: linear-gradient(to bottom,var(--ash),rgb(205, 196, 196),white);
     --ash-lingrad-reverse: linear-gradient(to top,var(--ash),rgb(205, 196, 196),white);
     --bone-lingrad: linear-gradient(to bottom,rgb(246, 246, 216),whitesmoke);
@@ -185,7 +185,18 @@ a,a:hover,a:focus,a:active {
 /* NAVBAR */
 
 #navigation {
-    background-color: var(--basalt);
+    
+    /* LAVA ORIGINAL */
+    /* background-color: var(--basalt); */
+    
+    /* LAVA WHITE */
+    /* background-color: var(--bright-bone); */
+
+
+    /* LAVA BLUE */
+    background-color: rgb(9, 126, 189);
+
+    color: var(--basalt);
     opacity: 100;
     margin: 0;
     top: 0;
@@ -201,7 +212,7 @@ a,a:hover,a:focus,a:active {
     font-size: 22px;
     height: 8vh;
     text-decoration: none;
-    color: var(--gold-color);
+    color: whitesmoke;
 }
 
 #dropdown-menu {
@@ -222,7 +233,8 @@ a,a:hover,a:focus,a:active {
 header {
     background: var(--example-lingrad);
     background-size: cover;
-    color: var(--bright-bone);
+    /* color: var(--bright-bone); */
+    color: whitesmoke;
     height: 100vh;
     width: 100%;
     z-index: -1;
@@ -237,26 +249,28 @@ header {
 
 .header-title {
    
-    color: orange;
+    /* color: orange; */
+    color: var(--bone-lingrad);
     font-family: var(--limelight-font);
     text-shadow: black 1px 1px;
 
 }
 
 .header-subtitle {
-    color: rgb(248, 189, 79);
+    /* color: rgb(248, 189, 79); */
+    color: var(--bright-bone);
     font-family: var(--raleway-font);
 }
 
 .title-section {
     background-color: var(--bright-bone);
-    color: orange;
+    color: var(--gold-color);
     height: 150px;
     width: 100%;
     font-style: bold;
     text-align: center;
     font-family: url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-    box-shadow: 0px 0px 4px orange;
+    box-shadow: 0px 0px 4px var(--gold-color);
 
 }
 
@@ -424,6 +438,10 @@ header button {
     color: var(--basalt);
 }
 
+#satisfaction .card-title{
+    color: var(--gold-color);
+}
+
 .testimonial {
     padding-top: 1em;
     padding-bottom: 1em;
@@ -435,7 +453,7 @@ header button {
 }
 
 .name {
-    color: orange;
+    color: var(--gold-color);
 }
 
 .card {
@@ -503,11 +521,13 @@ header button {
 
 
 section {
-    color: orange;
+    color: var(--gold-color);
 }
 
 section p {
     color: var(--basalt);
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 p {
@@ -562,11 +582,15 @@ footer p {
 
 
 #footer-copyright {
+    width: 100%;
+    margin: 0;
+    padding: 0;
     float: right;
 }
 
 #copyright {
     margin-right: 5%;
+    color: var(--basalt);
     transform: translateY(300%);
     float: right;
 }

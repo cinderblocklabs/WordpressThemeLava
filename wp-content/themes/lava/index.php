@@ -159,7 +159,7 @@
                 <!-- with 25% height added ('h-25') -->
                 <div class="col-md-5 col-sm-12 h-25">
                     <!-- MAIN BACKGROUND IMAGE -->
-                    <img class="bkg-img" src="assets/images/thematic/bird.png" alt="Image from freesvg.com">
+                    <img class="bkg-img" src="cllopo/bird.png" alt="Image from freesvg.com">
                 </div>
             </div>
         </header>
