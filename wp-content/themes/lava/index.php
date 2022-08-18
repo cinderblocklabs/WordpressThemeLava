@@ -1,5 +1,7 @@
 <!-- This is a required file, it is the fallback page for when others don't work -->
 
+<!-- INDEX FILE -->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -29,8 +31,6 @@
         <!-- FontAwesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         
-        <!-- Custom CSS Stylesheet -->
-        <link rel="stylesheet" type="text/css" href="./wp-content/themes/lava/style.css" media="screen" integrity="">
         
         <!-- FONTS -->
         
@@ -42,6 +42,16 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        
+        <!-- CUSTOM CSS STYLESHEET -->
+        
+        <!-- <link rel="stylesheet" type="text/css" href="./wp-content/themes/lava/style.css" media="screen" integrity=""> -->
+
+        <?php 
+
+            wp_head();
+        
+        ?>
 
     </head>
 
